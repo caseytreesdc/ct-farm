@@ -13,19 +13,31 @@ function Gallery(props) {
     <div className="Gallery">
       <Link to="/">
         <div className="thumbCap">
-          <img className="Gallery__thumbnail" src={home_thumbnail}></img>
+          <img
+            className="Gallery__thumbnail"
+            src={home_thumbnail}
+            alt="the gates of the farm"
+          ></img>
           <h2 className="Gallery__caption">Home</h2>
         </div>
       </Link>
       <Link to="/About">
         <div className="thumbCap">
-          <img className="Gallery__thumbnail" src={about_thumbnail}></img>
+          <img
+            className="Gallery__thumbnail"
+            src={about_thumbnail}
+            alt="a bench that might be at the farm"
+          ></img>
           <h2 className="Gallery__caption">About</h2>
         </div>
       </Link>
       <Link to="/Trees">
         <div className="thumbCap">
-          <img className="Gallery__thumbnail" src={trees_thumbnail}></img>
+          <img
+            className="Gallery__thumbnail"
+            src={trees_thumbnail}
+            alt="the trees page"
+          ></img>
           <h2 className="Gallery__caption">Trees</h2>
         </div>
       </Link>
@@ -34,6 +46,7 @@ function Gallery(props) {
           <img
             className="Gallery__thumbnail"
             src={sustainability_thumbnail}
+            alt="night farming"
           ></img>
           <h2 className="Gallery__caption">Sustainability</h2>
         </div>
