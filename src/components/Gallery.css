@@ -3,6 +3,6 @@
 }
 
 .Gallery__thumbnail {
-    margin: 0 1vw;
-    width: 300px;
+    margin: 0 .5vw;
+    width: 250px;
 }
