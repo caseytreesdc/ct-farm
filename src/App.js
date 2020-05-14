@@ -70,10 +70,11 @@ function Gallery() {
     </div>
   );
 }
+
 function App() {
   return (
     <div className="App">
-      <BrowserRouter>
+      <BrowserRouter basename={process.env.PUBLIC_URL}>
         <Switch>
           <Route component={Splash} exact path="/"></Route>
           <Route component={About} path="/About"></Route>
