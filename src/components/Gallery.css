@@ -9,3 +9,9 @@
     margin: 0 .5vw;
     width: 250px;
 }
+
+.Gallery__caption {
+    color: rgba(0, 0, 0, .8);
+    margin: 0;
+    padding: .2em .2em;
+}
