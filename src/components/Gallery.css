@@ -1,5 +1,8 @@
 .Gallery {
     margin: 3vh auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
 .Gallery__thumbnail {
