@@ -1,30 +1,30 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
+import home_thumbnail from "../assets/thumbnails/home.jpg";
+import about_thumbnail from "../assets/thumbnails/about.jpg";
+import trees_thumbnail from "../assets/thumbnails/trees.jpg";
+import sustainability_thumbnail from "../assets/thumbnails/sustainability.jpg";
+
 import "./Gallery.css";
 
 function Gallery() {
-  let thumbsrc1 =
-    "https://caseytrees.org/wp-content/uploads/2019/10/eoy-test-farm-video-article.jpg";
-  let thumbsrc2 =
-    "https://caseytrees.org/wp-content/uploads/2019/09/farm-ctp-19-article.jpg";
-  let thumbsrc3 =
-    "https://caseytrees.org/wp-content/uploads/2017/07/Farm-article-A.jpg";
-  let thumbsrc4 =
-    "https://caseytrees.org/wp-content/uploads/2018/07/NightFarming-article.jpg";
   return (
     <div className="Gallery">
       <Link to="/">
-        <img className="Gallery__thumbnail" src={thumbsrc1}></img>
+        <img className="Gallery__thumbnail" src={home_thumbnail}></img>
       </Link>
       <Link to="/About">
-        <img className="Gallery__thumbnail" src={thumbsrc2}></img>
+        <img className="Gallery__thumbnail" src={about_thumbnail}></img>
       </Link>
       <Link to="/Trees">
-        <img className="Gallery__thumbnail" src={thumbsrc3}></img>
+        <img className="Gallery__thumbnail" src={trees_thumbnail}></img>
       </Link>
       <Link to="/Sustainability">
-        <img className="Gallery__thumbnail" src={thumbsrc4}></img>
+        <img
+          className="Gallery__thumbnail"
+          src={sustainability_thumbnail}
+        ></img>
       </Link>
     </div>
   );
