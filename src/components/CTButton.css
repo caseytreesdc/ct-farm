@@ -29,11 +29,11 @@
 }
 
 .orange {
-    background: rgba(196,129,72, 1);
+    background: rgb(199, 112, 36);
 }
 
 .orange:hover {
-    background: rgb(203, 121, 50);
+    background: rgb(202, 99, 8);
 }
 
 .blue {
