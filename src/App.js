@@ -15,6 +15,9 @@ import splashVideo from "./assets/WebHeroClip.mp4";
 import greyDSCNLogo from "./assets/logos/grey-dcsn-logo.png";
 import greyCTLogo from "./assets/logos/grey-ct-logo.png";
 
+import aboutHero from "./assets/forPages/aboutHero.jpg";
+import comingSoon from "./assets/forPages/comingSoon.jpg";
+
 function Splash() {
   return (
     <div className="Splash">
@@ -40,6 +43,7 @@ function Splash() {
 function About() {
   return (
     <div className="About Page">
+      <img className="Page__hero" src={aboutHero}></img>
       <h1 className="Page__title">About Casey Tree Farm</h1>
       <p className="Page__p">
         Casey Tree Farm, originally surveyed by our first president and avid
@@ -61,11 +65,11 @@ function About() {
         counterparts, reducing environmental impacts and transportation costs,
         and simplifying planting.
       </p>
-      <p className="Page__contact">CONTACT  |  202.257.3666</p>
+      <p className="Page__contact">CONTACT | 202.257.3666</p>
     </div>
   );
 }
-
+function Spotlight() {}
 function Trees() {
   return (
     <div className="Trees Page">
@@ -77,7 +81,9 @@ function Trees() {
 function Sustainability() {
   return (
     <div className="Sustainibility Page">
-      <h1>This is the Sustainability page</h1>
+      <h1 className="Page__title">Sustainibility at Casey Tree Farm</h1>
+      <img src={comingSoon} className="Page__hero"></img>
+      <p className="Page__p">Coming soon</p>
     </div>
   );
 }
@@ -86,15 +92,13 @@ function App() {
   return (
     <div className="App">
       <Header></Header>
-      <BrowserRouter basename={process.env.PUBLIC_URL}>
-        <Switch>
-          <Route component={Splash} exact path="/"></Route>
-          <Route component={About} path="/About"></Route>
-          <Route component={Trees} path="/Trees"></Route>
-          <Route component={Sustainability} path="/Sustainability"></Route>
-        </Switch>
-        <Gallery></Gallery>
-      </BrowserRouter>
+      <Switch>
+        <Route component={Splash} exact path="/"></Route>
+        <Route component={About} path="/About"></Route>
+        <Route component={Trees} path="/Trees"></Route>
+        <Route component={Sustainability} path="/Sustainability"></Route>
+      </Switch>
+      <Gallery></Gallery>
       <Footer></Footer>
     </div>
   );
