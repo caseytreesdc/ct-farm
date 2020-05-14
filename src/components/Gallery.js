@@ -12,23 +12,31 @@ function Gallery(props) {
   return (
     <div className="Gallery">
       <Link to="/">
-        <img className="Gallery__thumbnail" src={home_thumbnail}></img>
-        <h2 className="Gallery__caption">Home</h2>
+        <div className="thumbCap">
+          <img className="Gallery__thumbnail" src={home_thumbnail}></img>
+          <h2 className="Gallery__caption">Home</h2>
+        </div>
       </Link>
       <Link to="/About">
-        <img className="Gallery__thumbnail" src={about_thumbnail}></img>
-        <h2 className="Gallery__caption">About</h2>
+        <div className="thumbCap">
+          <img className="Gallery__thumbnail" src={about_thumbnail}></img>
+          <h2 className="Gallery__caption">About</h2>
+        </div>
       </Link>
       <Link to="/Trees">
-        <img className="Gallery__thumbnail" src={trees_thumbnail}></img>
-        <h2 className="Gallery__caption">Trees</h2>
+        <div className="thumbCap">
+          <img className="Gallery__thumbnail" src={trees_thumbnail}></img>
+          <h2 className="Gallery__caption">Trees</h2>
+        </div>
       </Link>
       <Link to="/Sustainability">
-        <img
-          className="Gallery__thumbnail"
-          src={sustainability_thumbnail}
-        ></img>
-        <h2 className="Gallery__caption">Sustainability</h2>
+        <div className="thumbCap">
+          <img
+            className="Gallery__thumbnail"
+            src={sustainability_thumbnail}
+          ></img>
+          <h2 className="Gallery__caption">Sustainability</h2>
+        </div>
       </Link>
     </div>
   );

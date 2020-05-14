@@ -1,4 +1,18 @@
 .Page {
   margin: 0 10vw;
-  min-height: 60vh;
+  min-height: 50vh;
+}
+
+.Page__title {
+  font-weight: 400;
+  color: rgb(56, 124, 70);
+}
+
+.Page__p {
+  font-weight: 200;
+  line-height: 2;
+}
+
+.Page__contact {
+  color: rgb(56, 124, 70);
 }
