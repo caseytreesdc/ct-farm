@@ -1,0 +1,8 @@
+.Gallery {
+    margin: 3vh auto;
+}
+
+.Gallery__thumbnail {
+    margin: 0 1vw;
+    width: 800px;
+}
