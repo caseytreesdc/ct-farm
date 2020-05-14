@@ -1,10 +1,11 @@
 import React from "react";
-import { BrowserRouter, Link, Switch, Route } from "react-router-dom";
+import { BrowserRouter, Switch, Route } from "react-router-dom";
 import "./App.css";
-import "./components/Splash.css";
-import "./components/Video.css";
 import Gallery from "./components/Gallery"
 import "./components/Gallery.css";
+
+import "./components/Splash.css";
+import "./components/Video.css";
 import "./components/Page.css";
 
 import splashVideo from "./assets/WebHeroClip.mp4";
