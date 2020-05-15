@@ -26,7 +26,7 @@ const Header = () => {
             samePage
             blue
             url="https://caseytreesdc.github.io/ct-videos/#thumbnails"
-            text="WATCH"
+            text="AVAILABILITY"
           ></CTButton>
           <CTButton orange url="https://caseytrees.org/" text="HOME"></CTButton>
           <CTButton

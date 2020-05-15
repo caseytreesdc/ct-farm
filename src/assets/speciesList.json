@@ -1,0 +1,42 @@
+[
+    {
+        "latin": "Acer rebrum",
+        "common": "Red Maple 'October glory'",
+        "zone": "4-9",
+        "height": 45,
+        "spread": 30,
+        "notes": "tiny red flowers bloom in spring; green foliage; leaves turn crimson in the fall",
+        "sketch": "treeRenders/acer-rebrum.jpg",
+        "size": 2
+    },
+    {
+        "latin": "Gleditsia triacanthos",
+        "common": "Honeylocust 'Shademaster'",
+        "zone": "3-8",
+        "height": 60,
+        "spread": 60,
+        "notes": "fast growing tree with upright branch structure; straight and strong trunk; dark green foliage; leaves turn to gold in late fall",
+        "sketch": "treeRenders/gleditsia-triacanthos.jpg",
+        "size": 2
+    },
+    {
+        "latin": "Cercis canadensis",
+        "common": "Redbud",
+        "zone": "4-9",
+        "height": 25,
+        "spread": 20,
+        "notes": "early spring flowing tree; remains small, with the trunk diving close to the ground; new growth is reddish purple; dark green rosy pink flowers in spring; leaves turn yellow in fall",
+        "sketch": "treeRenders/cercis-canadensis.jpg",
+        "size": 3
+    },
+    {
+        "latin": "Prunus",
+        "common": "Cherry 'Okame'",
+        "zone": "5-8",
+        "height": 30,
+        "spread": 20,
+        "notes": "pink petals open fully before the leaves appear; glossy dark green leaves; leaves turn shades of yellow, orange, copper and red in fall",
+        "sketch": "treeRenders/prunus.jpg",
+        "size": 1
+    }
+]

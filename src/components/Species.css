@@ -1,0 +1,16 @@
+.Species__card {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border: solid 1px grey;
+}
+.Species__sketch {
+  width: 300px;
+}
+.Species__latin {
+  color: rgb(56, 124, 70);
+}
+
+.Species__info {
+  font-weight: 350;
+}

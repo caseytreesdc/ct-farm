@@ -4,6 +4,7 @@ import "./App.css";
 
 import Gallery from "./components/Gallery";
 import Header from "./components/Header";
+import Species from "./components/Species";
 import Footer from "./components/Footer";
 
 import "./components/Gallery.css";
@@ -74,6 +75,7 @@ function Trees() {
   return (
     <div className="Trees Page">
       <h1>This is the Trees page</h1>
+      <Species></Species>
     </div>
   );
 }
