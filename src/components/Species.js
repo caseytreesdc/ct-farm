@@ -17,6 +17,7 @@ class Species extends React.Component {
           <div className="Species__card">
             <img
               className="Species__sketch"
+              alt={speeshee.common}
               src={process.env.PUBLIC_URL + "/img/" + speeshee.sketch}
             ></img>
             <div>
