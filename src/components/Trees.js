@@ -1,34 +1,40 @@
 import React from "react";
-
-import "./Trees.css";
-
-import Checkbox from "./Checkbox";
-import Species from "./Species";
+import speciesList from "../assets/speciesList.json";
+import Checkbox from "../components/Checkbox";
 
 class Trees extends React.Component {
   constructor(props) {
     super(props);
+    this.state = {
+      speciesList: speciesList,
+      sizeCheckboxes: [],
+    };
+
+    this.sizesText = this.sizesText.bind(this)
+  }
+
+  sizesText(item) {
+        if (item.size === 1) {
+          return "Small";
+        }
+        if (item.size === 2) {
+          return "Medium";
+        }
+        if (item.size === 3) {
+          return "Large";
+        }
+  }
+
+  componentDidMount() {
+    this.setState({
+      sizeCheckboxes: this.state.speciesList.map((speeshee) => {
+        return <Checkbox text={this.sizesText(speeshee)}></Checkbox>;
+      }),
+    });
   }
   render() {
-    return (
-      <div className="Trees Page">
-        <h1 className="Page__title">Trees we Grow</h1>
-        <div className="Trees__filter">
-          <ul className="Trees__list">
-            <li>
-              <Checkbox text="Small"></Checkbox>
-            </li>
-            <li>
-              <Checkbox text="Medium"></Checkbox>
-            </li>
-            <li>
-              <Checkbox text="Large"></Checkbox>
-            </li>
-          </ul>
-        </div>
-        <Species></Species>
-      </div>
-    );
+    return this.state.sizeCheckboxes;
   }
 }
+
 export default Trees;

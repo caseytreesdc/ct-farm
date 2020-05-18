@@ -8,6 +8,7 @@ class Checkbox extends React.Component {
     super(props);
 
     this.state = {
+      props: props,
       onOrOff: checked,
       imgClassList: "check",
     };
@@ -25,9 +26,10 @@ class Checkbox extends React.Component {
     }
   }
   render() {
+    console.log(this.state.props)
     return (
       <div className="Checkbox__list-item">
-        <div onClick={this.handleClick} className="Checkbox">
+        <div className="Checkbox">
           <img
             className={this.state.imgClassList}
             src={this.state.onOrOff}

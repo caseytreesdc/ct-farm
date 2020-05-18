@@ -8,10 +8,10 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
-  background-color: rgb(51, 160, 255);
+  background-color: rgb(23, 80, 30);
   width: 18px;
   height: 18px;
-  border: solid rgb(51, 160, 255) 2px;
+  border: solid rgb(23, 80, 30) 2px;
   border-radius: 2.5px;
 }
 
