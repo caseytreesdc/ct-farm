@@ -74,7 +74,7 @@ function About() {
 function Trees() {
   return (
     <div className="Trees Page">
-      <h1>This is the Trees page</h1>
+      <h1 className="Page__title">Trees we Grow</h1>
       <Species></Species>
     </div>
   );
