@@ -1,0 +1,24 @@
+.Checkbox__list-item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  
+}
+.Checkbox {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: rgb(51, 160, 255);
+  width: 18px;
+  height: 18px;
+  border: solid rgb(51, 160, 255) 2px;
+  border-radius: 2.5px;
+}
+
+.check {
+  height: 60%;
+}
+
+.Checkbox__text {
+  padding-left: 1.5em;;
+}

@@ -1,0 +1,8 @@
+.Trees__list {
+    list-style: none;
+}
+
+.Trees__list-item {
+    display: flex;
+    flex-direction: row;
+}

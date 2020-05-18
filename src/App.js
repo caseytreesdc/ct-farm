@@ -4,7 +4,7 @@ import "./App.css";
 
 import Gallery from "./components/Gallery";
 import Header from "./components/Header";
-import Species from "./components/Species";
+import Trees from "./components/Trees";
 import Footer from "./components/Footer";
 
 import "./components/Gallery.css";
@@ -28,8 +28,16 @@ function Splash() {
           <p className="Splash__title ctFarm">Casey Trees Farm</p>
         </div>
         <div className="Splash__logo-container">
-          <img className="Splash__logo" src={greyCTLogo} alt="Casey Trees Logo"></img>
-          <img className="Splash__logo" src={greyDSCNLogo} alt="D.C. State Nursery Logo"></img>
+          <img
+            className="Splash__logo"
+            src={greyCTLogo}
+            alt="Casey Trees Logo"
+          ></img>
+          <img
+            className="Splash__logo"
+            src={greyDSCNLogo}
+            alt="D.C. State Nursery Logo"
+          ></img>
         </div>
       </div>
       <div className="Splash__Video-box">
@@ -71,20 +79,15 @@ function About() {
   );
 }
 
-function Trees() {
-  return (
-    <div className="Trees Page">
-      <h1 className="Page__title">Trees we Grow</h1>
-      <Species></Species>
-    </div>
-  );
-}
-
 function Sustainability() {
   return (
     <div className="Sustainibility Page">
       <h1 className="Page__title">Sustainibility at Casey Tree Farm</h1>
-      <img src={comingSoon} className="Page__hero" alt="cute flower buds signifying that this section is growing!"></img>
+      <img
+        src={comingSoon}
+        className="Page__hero"
+        alt="cute flower buds signifying that this section is growing!"
+      ></img>
       <p className="Page__p">Coming soon</p>
     </div>
   );
