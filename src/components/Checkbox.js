@@ -26,7 +26,6 @@ class Checkbox extends React.Component {
     }
   }
   render() {
-    console.log(this.state.props)
     return (
       <div className="Checkbox__list-item">
         <div className="Checkbox">

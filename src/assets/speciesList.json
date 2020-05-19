@@ -1,5 +1,6 @@
 [
     {
+        "id": 1,
         "latin": "Acer rebrum",
         "common": "Red Maple 'October glory'",
         "zone": "4-9",
@@ -10,6 +11,7 @@
         "size": 2
     },
     {
+        "id": 2, 
         "latin": "Gleditsia triacanthos",
         "common": "Honeylocust 'Shademaster'",
         "zone": "3-8",
@@ -20,6 +22,7 @@
         "size": 2
     },
     {
+        "id": 3, 
         "latin": "Cercis canadensis",
         "common": "Redbud",
         "zone": "4-9",
@@ -30,6 +33,7 @@
         "size": 3
     },
     {
+        "id": 4,
         "latin": "Prunus",
         "common": "Cherry 'Okame'",
         "zone": "5-8",
