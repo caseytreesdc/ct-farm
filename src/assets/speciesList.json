@@ -8,7 +8,7 @@
         "spread": 30,
         "notes": "tiny red flowers bloom in spring; green foliage; leaves turn crimson in the fall",
         "sketch": "treeRenders/acer-rebrum.jpg",
-        "size": 2
+        "size": "Small"
     },
     {
         "id": 2, 
@@ -19,7 +19,7 @@
         "spread": 60,
         "notes": "fast growing tree with upright branch structure; straight and strong trunk; dark green foliage; leaves turn to gold in late fall",
         "sketch": "treeRenders/gleditsia-triacanthos.jpg",
-        "size": 2
+        "size": "Medium"
     },
     {
         "id": 3, 
@@ -30,7 +30,7 @@
         "spread": 20,
         "notes": "early spring flowing tree; remains small, with the trunk diving close to the ground; new growth is reddish purple; dark green rosy pink flowers in spring; leaves turn yellow in fall",
         "sketch": "treeRenders/cercis-canadensis.jpg",
-        "size": 3
+        "size": "Large"
     },
     {
         "id": 4,
@@ -41,6 +41,6 @@
         "spread": 20,
         "notes": "pink petals open fully before the leaves appear; glossy dark green leaves; leaves turn shades of yellow, orange, copper and red in fall",
         "sketch": "treeRenders/prunus.jpg",
-        "size": 1
+        "size": "Small"
     }
 ]
