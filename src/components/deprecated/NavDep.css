@@ -1,0 +1,65 @@
+.Nav {
+  font-family: zeitung-mono, cronos-pro, lato, sans-serif;
+  width: 50vw;
+  display: flex;
+  margin: 0 2vw;
+  justify-content: space-evenly;
+  /* background: green; */
+}
+
+.Nav__item {
+  transform: skew(-20deg);
+  
+}
+
+.Nav__link {
+  text-decoration: none;
+  color: rgb(40, 16, 15);
+  padding: 0 3em;
+  background: rgb(65, 104, 172);
+}
+
+.Nav__text {
+    transform: skew(20deg);
+}
+
+.item-0 {
+  /* border-right: solid 2px rgba(40, 16, 15, 1); */
+}
+.item-1 {
+  /* border-left: solid 2px rgba(40, 16, 15, 1); */
+  /* border-right: solid 2px rgba(40, 16, 15, 1); */
+}
+.item-2 {
+  /* border-left: solid 2px rgba(40, 16, 15, 1); */
+  /* border-right: solid 2px rgba(40, 16, 15, 1); */
+}
+.item-3 {
+  /* border-left: solid 2px rgba(40, 16, 15, 1); */
+  /* border-right: solid 2px rgba(40, 16, 15, 1); */
+}
+.item-4 {
+  /* border-left: solid 2px rgba(40, 16, 15, 1); */
+}
+
+.Nav__link {
+  /* display: flex; */
+  /* text-decoration: none; */
+  /* color: rgb(40, 16, 15); */
+  /* transform: skew(20deg); */
+  /* margin: 0 1em; */
+}
+
+.Nav__slash {
+  margin: 0 0;
+  padding: 0 0;
+}
+
+.Nav__link:hover {
+  /* color: rgb(255, 255, 255); */
+  /* background: rgb(65, 104, 172); */
+}
+
+.Nav__text:hover {
+  /* background: rgb(65, 104, 172); */
+}

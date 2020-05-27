@@ -18,17 +18,23 @@ function Nav() {
   ];
 
   let Nav = navLinks.map((item, index) => {
-    if (index == navLinks.length - 1) {
+    if (index != navLinks.length - 1) {
       return (
-        <div className="Nav__item">
-          <a href={item.url}>{item.text}</a>
-        </div>
+        <>
+          <div className="Nav__anchor-box">
+            <a className="Nav__anchor" href={item.url}>
+              <p className="Nav__anchor-text">{item.text}</p>
+            </a>
+          </div>
+          <div className="Nav__slash">{""}</div>
+        </>
       );
     } else {
       return (
-        <div className="Nav__item">
-          <a href={item.url}>{item.text}</a>
-          <div>/</div>
+        <div className="Nav__anchor-box">
+          <a className="Nav__anchor" href={item.url}>
+            <p className="Nav__anchor-text">{item.text}</p>
+          </a>
         </div>
       );
     }

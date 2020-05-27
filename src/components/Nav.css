@@ -1,7 +1,35 @@
-.Nav, .Nav__item {
-    display: flex;
+.Nav {
+  display: flex;
+  font-family: zeitung-mono, cronos-pro, lato, sans-serif;
+  margin: 0 2vw;
 }
 
-.Nav {
-    font-family: zeitung-mono;
+.Nav__anchor-box {
+  transform: skew(-20deg);
+  display: flex;
+}
+
+.Nav__anchor {
+  color: rgb(40, 16, 15);
+}
+
+.Nav__anchor-text {
+  transform: skew(20deg);
+  margin: 0;
+  padding: 0 2vw;
+}
+
+.Nav__slash {
+  transform: skew(-20deg);
+  margin: 0 0.5vw;
+  width: 2px;
+  background: rgb(40, 16, 15);
+}
+
+.Nav__anchor-box:hover {
+  background: rgb(65, 104, 172);
+}
+
+.Nav__anchor-box .Nav__anchor:hover {
+  color: rgb(255, 255, 255);
 }
