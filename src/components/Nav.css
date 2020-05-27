@@ -1,0 +1,7 @@
+.Nav, .Nav__item {
+    display: flex;
+}
+
+.Nav {
+    font-family: zeitung-mono;
+}
