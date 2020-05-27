@@ -1,45 +1,71 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 import "./Nav.css";
 
-function Nav() {
-  class NavLink {
-    constructor(text, url) {
-      this.text = text.toUpperCase();
-      this.url = url;
+class Nav extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      navType: props.navType,
+      navLinks: props.navLinks,
+      navBar: null,
+    };
+  }
+  componentDidMount() {
+    if (this.state.navType == "external") {
+      let externalNav = this.state.navLinks.map((item, index) => {
+        if (index != this.state.navLinks.length - 1) {
+          return (
+            <>
+              <div className="Nav__anchor-box">
+                <a className="Nav__anchor" href={item.path}>
+                  <p className="Nav__anchor-text">{item.text}</p>
+                </a>
+              </div>
+              <div className="Nav__slash">{""}</div>
+            </>
+          );
+        } else {
+          return (
+            <div className="Nav__anchor-box">
+              <a className="Nav__anchor" href={item.path}>
+                <p className="Nav__anchor-text">{item.text}</p>
+              </a>
+            </div>
+          );
+        }
+      });
+      this.setState({ navBar: externalNav });
+    } else if (this.state.navType == "internal") {
+      let internalNav = this.state.navLinks.map((item, index) => {
+        if (index != this.state.navLinks.length - 1) {
+          return (
+            <>
+              <div className="Nav__anchor-box">
+                <Link className="Nav__anchor" to={item.path}>
+                  <p className="Nav__anchor-text">{item.text}</p>
+                </Link>
+              </div>
+              <div className="Nav__slash">{""}</div>
+            </>
+          );
+        } else {
+          return (
+            <div className="Nav__anchor-box">
+              <Link className="Nav__anchor" to={item.path}>
+                <p className="Nav__anchor-text">{item.text}</p>
+              </Link>
+            </div>
+          );
+        }
+      });
+      this.setState({ navBar: internalNav });
     }
   }
-  let navLinks = [
-    new NavLink("about", "https://www.google.com"),
-    new NavLink("get involved", "https://www.google.com"),
-    new NavLink("learn", "https://www.google.com"),
-    new NavLink("plant", "https://www.google.com"),
-    new NavLink("give", "https://www.google.com"),
-  ];
-
-  let Nav = navLinks.map((item, index) => {
-    if (index != navLinks.length - 1) {
-      return (
-        <>
-          <div className="Nav__anchor-box">
-            <a className="Nav__anchor" href={item.url}>
-              <p className="Nav__anchor-text">{item.text}</p>
-            </a>
-          </div>
-          <div className="Nav__slash">{""}</div>
-        </>
-      );
-    } else {
-      return (
-        <div className="Nav__anchor-box">
-          <a className="Nav__anchor" href={item.url}>
-            <p className="Nav__anchor-text">{item.text}</p>
-          </a>
-        </div>
-      );
-    }
-  });
-  return <div className="Nav">{Nav}</div>;
+  render() {
+    return <div className="Nav">{this.state.navBar}</div>;
+  }
 }
 
 export default Nav;

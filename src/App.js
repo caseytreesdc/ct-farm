@@ -3,6 +3,7 @@ import { Switch, Route } from "react-router-dom";
 import "./App.css";
 
 import Gallery from "./components/Gallery";
+import Nav from "./components/Nav";
 import Header from "./components/Header";
 import Trees from "./components/Trees";
 import Footer from "./components/Footer";
@@ -19,25 +20,31 @@ import greyCTLogo from "./assets/logos/grey-ct-logo.png";
 import aboutHero from "./assets/forPages/aboutHero.jpg";
 import comingSoon from "./assets/forPages/comingSoon.jpg";
 
+function Logos() {
+  return (
+    <div className="Splash__logo-container">
+      <img
+        className="Splash__logo"
+        src={greyCTLogo}
+        alt="Casey Trees Logo"
+      ></img>
+      <img
+        className="Splash__logo"
+        src={greyDSCNLogo}
+        alt="D.C. State Nursery Logo"
+      ></img>
+    </div>
+  );
+}
 function Splash() {
   return (
     <div className="Splash">
       <div className="Splash__overlay">
         <div className="Splash__title-box">
-          <p className="Splash__title dcsn">D.C. State Nursery at</p>
-          <p className="Splash__title ctFarm">Casey Trees Farm</p>
-        </div>
-        <div className="Splash__logo-container">
-          <img
-            className="Splash__logo"
-            src={greyCTLogo}
-            alt="Casey Trees Logo"
-          ></img>
-          <img
-            className="Splash__logo"
-            src={greyDSCNLogo}
-            alt="D.C. State Nursery Logo"
-          ></img>
+          <p className="Splash__title dcsn">
+            DC STATE NURSERY <i>at</i>
+          </p>
+          <p className="Splash__title ctFarm">CASEY TREE FARM</p>
         </div>
       </div>
       <div className="Splash__Video-box">
@@ -81,8 +88,22 @@ function About() {
 
 function Sustainability() {
   return (
-    <div className="Sustainibility Page">
-      <h1 className="Page__title">Sustainibility at Casey Tree Farm</h1>
+    <div className="Sustainability Page">
+      <h1 className="Page__title">Sustainability at Casey Tree Farm</h1>
+      <img
+        src={comingSoon}
+        className="Page__hero"
+        alt="cute flower buds signifying that this section is growing!"
+      ></img>
+      <p className="Page__p">Coming soon</p>
+    </div>
+  );
+}
+
+function Request() {
+  return (
+    <div className="Request Page">
+      <h1 className="Page__title">Request Trees</h1>
       <img
         src={comingSoon}
         className="Page__hero"
@@ -97,13 +118,23 @@ function App() {
   return (
     <div className="App">
       <Header></Header>
+      <Splash></Splash>
+      <Nav
+        navType="internal"
+        navLinks={[
+          { text: "CT FARM", path: "/About" },
+          { text: "FULL INVENTORY", path: "/Trees" },
+          { text: "SUSTAINABILITY", path: "/Sustainability" },
+          { text: "REQUEST", path: "/Request" },
+        ]}
+      ></Nav>
       <Switch>
         <Route component={Splash} exact path="/"></Route>
         <Route component={About} path="/About"></Route>
         <Route component={Trees} path="/Trees"></Route>
         <Route component={Sustainability} path="/Sustainability"></Route>
+        <Route component={Request} path="/Request"></Route>
       </Switch>
-      <Gallery></Gallery>
       <Footer></Footer>
     </div>
   );
