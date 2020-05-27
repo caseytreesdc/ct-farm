@@ -1,14 +1,36 @@
 import React from "react";
 import "./Header.css";
-import CTButton from "./CTButton";
+// import Nav from "./Nav";
+import logo from "../assets/logos/SVG/header-logo.svg";
 
-import SocialLinks from "./SocialLinks"
-import logo from "../assets/logos/header-logo.png";
+function Nav() {
+  class NavLink {
+    constructor(text, url) {
+      this.text = text.toUpperCase();
+      this.url = url;
+    }
+  }
+  let navLinks = [
+    new NavLink("about", "https://www.google.com"),
+    new NavLink("get involved", "https://www.google.com"),
+    new NavLink("learn", "https://www.google.com"),
+    new NavLink("plant", "https://www.google.com"),
+    new NavLink("give", "https://www.google.com"),
+  ];
+
+  let Nav = navLinks.map((item, index) => {
+    if (index == navLinks.length - 1) {
+      return <div><a href={item.url}>{item.text}</a></div>;
+    } else {
+      return <div><a href={item.url}>{item.text}</a><div>/</div></div>;
+    }
+  });
+  return <div>{Nav}</div>;
+}
 
 const Header = () => {
   return (
     <div className="Header">
-      <SocialLinks left></SocialLinks>
       <div className="Header__main">
         <a
           className="Header__logo-container"
@@ -21,20 +43,7 @@ const Header = () => {
             className="Header__logo"
           ></img>
         </a>
-        <div className="Header__buttons">
-          <CTButton
-            samePage
-            blue
-            url="https://caseytreesdc.github.io/ct-videos/#thumbnails"
-            text="AVAILABILITY"
-          ></CTButton>
-          <CTButton orange url="https://caseytrees.org/" text="HOME"></CTButton>
-          <CTButton
-            green
-            url="https://caseytrees.org/waystogive/evergreen-membership-donation-form/"
-            text="DONATE"
-          ></CTButton>
-        </div>
+        {Nav()}
       </div>
     </div>
   );
