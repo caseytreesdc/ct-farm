@@ -122,15 +122,14 @@ function App() {
       <Nav
         navType="internal"
         navLinks={[
-          { text: "CT FARM", path: "/About" },
+          { text: "CT FARM", path: "/" },
           { text: "FULL INVENTORY", path: "/Trees" },
           { text: "SUSTAINABILITY", path: "/Sustainability" },
           { text: "REQUEST", path: "/Request" },
         ]}
       ></Nav>
       <Switch>
-        <Route component={Splash} exact path="/"></Route>
-        <Route component={About} path="/About"></Route>
+        <Route component={About} exact path="/"></Route>
         <Route component={Trees} path="/Trees"></Route>
         <Route component={Sustainability} path="/Sustainability"></Route>
         <Route component={Request} path="/Request"></Route>
