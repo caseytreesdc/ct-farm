@@ -1,9 +1,11 @@
 import React from "react";
-import json from "../assets/speciesList2.json";
-import "./Species.css";
+import json from "../../assets/speciesList2.json";
+import Logos from "../Logos";
+
+import "../Species.css";
 import "./Trees.css";
 import "./Page.css";
-// import "./Checkbox.css";
+
 class Trees extends React.Component {
   constructor(props) {
     super(props);
@@ -33,12 +35,12 @@ class Trees extends React.Component {
                   src={process.env.PUBLIC_URL + "/img/" + element.sketch}
                 ></img> */}
                 <div>
-                  <h3>
-                    <span className="Species__latin">{element.latin} | </span>
-                    <span className="Species__common">{element.common}</span>
+                  <h3 className="Species__names">
+                    <p className="Species__common">{element.common}</p>
+                    <p className="Species__latin">{element.latin}</p>
                   </h3>
                   <p className="Species__info"></p>
-                  <p className="Species__info">Size: {element.size}</p>
+                  {/* <p className="Species__info">Size: {element.size}</p> */}
                   <p className="Species__info">
                     Farm Total: {element.farmTotal}
                   </p>
@@ -62,9 +64,32 @@ class Trees extends React.Component {
 
   render() {
     return (
-      <div className="Trees Page">
+      <div className="Page">
         <div>
-          <form className="">
+          <p className="Page__p">
+            <b>AT CASEY TREE FARM</b>, we're proud of our sustainably-grown
+            trees. In this guide we offer 42 species - from ornamental cherries
+            to towering sycamores -{" "}
+            <span className="Page__highlight">
+              available for wholesale purchase.
+            </span>
+            We are excited to work with you to re-tree your community and meet
+            your canopy goals.
+          </p>
+          <p className="Page__p">
+            We encourage you to schedule a visit to see our trees up close. We
+            would be pleased to give you a tour of our nursery andthe farm, and
+            explain in greater detailour susainable growing practices.
+          </p>
+          <p className="Page__p">
+            Please note that all listed measurements for mature height and
+            spread are approximate.
+          </p>
+          <Logos></Logos>
+        </div>
+        <div className="Trees">
+          <h1 className="Page__title">FULL INVENTORY</h1>
+          <form className="Trees__form">
             <p>Size</p>
             <input
               onClick={this.handleClick}
@@ -88,8 +113,8 @@ class Trees extends React.Component {
             ></input>
             <label for="Large Tree">Large</label>
           </form>
+          <div className="Trees__list">{this.state.display}</div>
         </div>
-        <div className="Trees__list">{this.state.display}</div>
       </div>
     );
   }

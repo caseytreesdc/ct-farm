@@ -1,0 +1,26 @@
+.Page {
+  font-family: cronos-pro, lato, sans-serif;
+  min-height: 50vh;
+  display: flex;
+  flex-direction: column;
+  background: rgb(224, 225, 225);
+  color: rgb(40, 16, 15);
+}
+
+.Page__hero {
+  width: 100%;
+  max-height: 45vh;
+  object-fit: cover;
+}
+
+.Page__title {
+  font-weight: normal;
+  margin: 2vh 4vw;
+}
+
+.Page__p {
+  margin: 2vh 4vw;
+  font-size: 20px;
+  font-family: cronos-pro, lato, sans-serif;
+  line-height: 1;
+}

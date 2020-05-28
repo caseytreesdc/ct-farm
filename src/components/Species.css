@@ -3,11 +3,26 @@
   flex-direction: row;
   align-items: center;
   width: 20vw;
-  border: solid 1px grey;
+  /* border: solid 1px grey; */
   margin: 1vw;
   padding: 1vw;
+  border-radius: 6px;
+  background: rgba(0,0,0,.1);
 }
 
+.Species__names {
+  margin: 0 auto;
+}
+
+.Species__common, .Species__latin {
+  margin: 0 auto;
+}
+
+.Species__common,
+.Species__info {
+  color: rgb(40, 16, 15);
+  
+}
 .Species__sketch {
   width: 300px;
 }
@@ -16,5 +31,6 @@
 }
 
 .Species__info {
-  font-weight: 350;
+  font-size: 18px;
+  margin: 0 auto;
 }

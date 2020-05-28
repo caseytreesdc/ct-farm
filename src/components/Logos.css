@@ -1,0 +1,9 @@
+.Splash__logo-container {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.Splash__logo {
+  height: 120px;
+  fill: white;
+}
