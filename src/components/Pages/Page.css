@@ -3,8 +3,8 @@
   min-height: 50vh;
   display: flex;
   flex-direction: column;
-  background: rgb(224, 225, 225);
   color: rgb(40, 16, 15);
+  padding: 2vh 4vw;
 }
 
 .Page__hero {
@@ -15,11 +15,9 @@
 
 .Page__title {
   font-weight: normal;
-  margin: 2vh 4vw;
 }
 
 .Page__p {
-  margin: 2vh 4vw;
   font-size: 20px;
   font-family: cronos-pro, lato, sans-serif;
   line-height: 1;
