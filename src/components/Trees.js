@@ -1,5 +1,5 @@
 import React from "react";
-import json from "../assets/speciesList.json";
+import json from "../assets/speciesList2.json";
 import "./Species.css"
 // import "./Checkbox.css";
 class Trees extends React.Component {
@@ -24,11 +24,11 @@ class Trees extends React.Component {
           if (element.size === selectedProperty) {
             displayList.push(
               <div className="Species__card">
-                <img
+                {/* <img
                   className="Species__sketch"
                   alt={element.common}
                   src={process.env.PUBLIC_URL + "/img/" + element.sketch}
-                ></img>
+                ></img> */}
                 <div>
                   <h3>
                     <span className="Species__latin">{element.latin} | </span>
@@ -65,23 +65,23 @@ class Trees extends React.Component {
               onClick={this.handleClick}
               className="Checkbox"
               type="checkbox"
-              id="Small"
+              id="Small Tree"
             ></input>
-            <label for="Small">Small</label>
+            <label for="Small Tree">Small</label>
             <input
               onClick={this.handleClick}
               className="Checkbox"
               type="checkbox"
-              id="Medium"
+              id="Medium Tree"
             ></input>
-            <label for="Medium">Medium</label>
+            <label for="Medium Tree">Medium</label>
             <input
               onClick={this.handleClick}
               className="Checkbox"
               type="checkbox"
-              id="Large"
+              id="Large Tree"
             ></input>
-            <label for="Large">Large</label>
+            <label for="Large Tree">Large</label>
           </form>
         </div>
         <div>{this.state.display}</div>

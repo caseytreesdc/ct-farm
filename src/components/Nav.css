@@ -1,7 +1,11 @@
 .Nav {
   display: flex;
   font-family: zeitung-mono, cronos-pro, lato, sans-serif;
-  margin: 2vw 2vw;
+  padding: 2vw 2vw;
+}
+
+.grey {
+  background: rgb(224, 225, 225);
 }
 
 .Nav__anchor-box {

@@ -1,0 +1,938 @@
+[
+    {
+      "latin": "Acer rubrum",
+      "common": "Red Maple",
+      "Genus": "Acer",
+      "Species": "rubrum",
+      "size": "Medium Tree",
+      "farmTotal": 43,
+      "approxAvailable": 40
+    },
+    {
+      "latin": "Acer rubrum 'October Glory'",
+      "common": "October Glory Red Maple",
+      "Genus": "Acer",
+      "Species": "rubrum",
+      "size": "Medium Tree",
+      "farmTotal": 911,
+      "approxAvailable": 49
+    },
+    {
+      "latin": "Acer saccharinum",
+      "common": "Silver Maple",
+      "Genus": "Acer",
+      "Species": "saccharinum",
+      "size": "Large Tree",
+      "farmTotal": 8,
+      "approxAvailable": 8
+    },
+    {
+      "latin": "Acer x freemanii 'Autumn Blaze'",
+      "common": "Autumn Blaze Freeman Maple",
+      "Genus": "Acer",
+      "Species": "x freemanii",
+      "size": "Medium Tree",
+      "farmTotal": 187,
+      "approxAvailable": 0
+    },
+    {
+      "latin": "Amelanchier laevis 'Cumulus'",
+      "common": "Cumulus Allegheny Serviceberry",
+      "Genus": "Amelanchier",
+      "Species": "laevis",
+      "size": "Small Tree",
+      "farmTotal": 14,
+      "approxAvailable": 14
+    },
+    {
+      "latin": "Amelanchier x grandiflora 'Autumn Brilliance'",
+      "common": "Autumn Brilliance Apple Serviceberry",
+      "Genus": "Amelanchier",
+      "Species": "x grandiflora",
+      "size": "Small Tree",
+      "farmTotal": 670,
+      "approxAvailable": 7
+    },
+    {
+      "latin": "Asimina triloba",
+      "common": "Pawpaw",
+      "Genus": "Asimina",
+      "Species": "triloba",
+      "size": "Medium Tree",
+      "farmTotal": 186,
+      "approxAvailable": 0
+    },
+    {
+      "latin": "Betula nigra",
+      "common": "River Birch",
+      "Genus": "Betula",
+      "Species": "nigra",
+      "size": "Medium Tree",
+      "farmTotal": 1,
+      "approxAvailable": 1
+    },
+    {
+      "latin": "Betula nigra 'Dura-Heat'",
+      "common": "Dura-Heat River Birch",
+      "Genus": "Betula",
+      "Species": "nigra",
+      "size": "Medium Tree",
+      "farmTotal": 762,
+      "approxAvailable": 123
+    },
+    {
+      "latin": "Betula nigra 'Heritage'",
+      "common": "Heritage River Birch",
+      "Genus": "Betula",
+      "Species": "nigra",
+      "size": "Medium Tree",
+      "farmTotal": 6,
+      "approxAvailable": 6
+    },
+    {
+      "latin": "Carpinus betulus",
+      "common": "European Hornbeam",
+      "Genus": "Carpinus",
+      "Species": "betulus",
+      "size": "Small Tree",
+      "farmTotal": 1,
+      "approxAvailable": 1
+    },
+    {
+      "latin": "Carpinus caroliniana",
+      "common": "American Hornbeam",
+      "Genus": "Carpinus",
+      "Species": "caroliniana",
+      "size": "Small Tree",
+      "farmTotal": 1007,
+      "approxAvailable": 55
+    },
+    {
+      "latin": "Carya illinoinensis",
+      "common": "Hardy Pecan",
+      "Genus": "Carya",
+      "Species": "illinoinensis",
+      "size": "Large Tree",
+      "farmTotal": 5,
+      "approxAvailable": 5
+    },
+    {
+      "latin": "Celtis laevigata",
+      "common": "Sugarberry",
+      "Genus": "Celtis",
+      "Species": "laevigata",
+      "size": "Medium Tree",
+      "farmTotal": 136,
+      "approxAvailable": 136
+    },
+    {
+      "latin": "Celtis occidentalis",
+      "common": "Hackberry",
+      "Genus": "Celtis",
+      "Species": "occidentalis",
+      "size": "Medium Tree",
+      "farmTotal": 721,
+      "approxAvailable": 31
+    },
+    {
+      "latin": "Celtis occidentalis x laevigata 'Magnifica'",
+      "common": "Magnifica Sugar Hackberry",
+      "Genus": "Celtis",
+      "Species": "occidentalis x laevigata",
+      "size": "Medium Tree",
+      "farmTotal": 98,
+      "approxAvailable": 0
+    },
+    {
+      "latin": "Cercis canadensis",
+      "common": "Eastern Redbud",
+      "Genus": "Cercis",
+      "Species": "canadensis",
+      "size": "Small Tree",
+      "farmTotal": 978,
+      "approxAvailable": 265
+    },
+    {
+      "latin": "Cercis canadensis 'Forest Pansy'",
+      "common": "Forest Pansy Eastern Redbud",
+      "Genus": "Cercis",
+      "Species": "canadensis",
+      "size": "Small Tree",
+      "farmTotal": 101,
+      "approxAvailable": 0
+    },
+    {
+      "latin": "Cladrastis lutea",
+      "common": "Yellowwood",
+      "Genus": "Cladrastis",
+      "Species": "lutea",
+      "size": "Medium Tree",
+      "farmTotal": 750,
+      "approxAvailable": 34
+    },
+    {
+      "latin": "Cornus 'Venus'",
+      "common": "Venus Dogwood",
+      "Genus": "Cornus",
+      "Species": "x sp.",
+      "size": "Small Tree",
+      "farmTotal": 3,
+      "approxAvailable": 3
+    },
+    {
+      "latin": "Cornus florida 'Appalachian Mist'",
+      "common": "Appalachian Mist Flowering Dogwood",
+      "Genus": "Cornus",
+      "Species": "florida",
+      "size": "Small Tree",
+      "farmTotal": 149,
+      "approxAvailable": 68
+    },
+    {
+      "latin": "Cornus florida 'Cherokee Brave'",
+      "common": "Cherokee Brave Flowering Dogwood",
+      "Genus": "Cornus",
+      "Species": "florida",
+      "size": "Small Tree",
+      "farmTotal": 1,
+      "approxAvailable": 1
+    },
+    {
+      "latin": "Cornus florida 'Cherokee Princess'",
+      "common": "Cherokee Princess Flowering Dogwood",
+      "Genus": "Cornus",
+      "Species": "florida",
+      "size": "Small Tree",
+      "farmTotal": 205,
+      "approxAvailable": 71
+    },
+    {
+      "latin": "Cornus kousa",
+      "common": "Kousa Dogwood",
+      "Genus": "Cornus",
+      "Species": "kousa",
+      "size": "Small Tree",
+      "farmTotal": 467,
+      "approxAvailable": 0
+    },
+    {
+      "latin": "Cryptomeria japonica",
+      "common": "Japanese Cryptomeria",
+      "Genus": "Cryptomeria",
+      "Species": "japonica",
+      "size": "Large Tree",
+      "farmTotal": 225,
+      "approxAvailable": 0
+    },
+    {
+      "latin": "Cryptomeria japonica 'Radicans'",
+      "common": "Radicans Japanese Cryptomeria",
+      "Genus": "Cryptomeria",
+      "Species": "japonica",
+      "size": "Large Tree",
+      "farmTotal": 21,
+      "approxAvailable": 0
+    },
+    {
+      "latin": "Diospyros virginiana",
+      "common": "American Persimmon",
+      "Genus": "Diospyros",
+      "Species": "virginiana",
+      "size": "Medium Tree",
+      "farmTotal": 46,
+      "approxAvailable": 29
+    },
+    {
+      "latin": "Fagus grandifolia",
+      "common": "American Beech",
+      "Genus": "Fagus",
+      "Species": "grandifolia",
+      "size": "Large Tree",
+      "farmTotal": 723,
+      "approxAvailable": 15
+    },
+    {
+      "latin": "Ginkgo biloba 'Autumn Gold'",
+      "common": "Autumn Gold Ginko",
+      "Genus": "Ginkgo",
+      "Species": "biloba",
+      "size": "Large Tree",
+      "farmTotal": 640,
+      "approxAvailable": 9
+    },
+    {
+      "latin": "Ginkgo biloba 'Princeton Sentry'",
+      "common": "Princeton Sentry Ginko",
+      "Genus": "Ginkgo",
+      "Species": "biloba",
+      "size": "Large Tree",
+      "farmTotal": 116,
+      "approxAvailable": 0
+    },
+    {
+      "latin": "Ginkgo biloba 'The President'",
+      "common": "The President Ginko",
+      "Genus": "Ginkgo",
+      "Species": "biloba",
+      "size": "Large Tree",
+      "farmTotal": 38,
+      "approxAvailable": 0
+    },
+    {
+      "latin": "Gleditsia triacanthos var. inermis 'Shademaster'",
+      "common": "Shademaster Thornless Honeylocust",
+      "Genus": "Gleditsia",
+      "Species": "triacanthos var. inermis",
+      "size": "Large Tree",
+      "farmTotal": 656,
+      "approxAvailable": 0
+    },
+    {
+      "latin": "Gleditsia triacanthos var. inermis 'Skyline'",
+      "common": "Skyline Thornless Honeylocust",
+      "Genus": "Gleditsia",
+      "Species": "triacanthos var. inermis",
+      "size": "Large Tree",
+      "farmTotal": 5,
+      "approxAvailable": 5
+    },
+    {
+      "latin": "Gymnocladus dioicus",
+      "common": "Kentucky Coffeetree",
+      "Genus": "Gymnocladus",
+      "Species": "dioicus",
+      "size": "Large Tree",
+      "farmTotal": 58,
+      "approxAvailable": 58
+    },
+    {
+      "latin": "Gymnocladus dioicus 'Decaf'",
+      "common": "Decaf Kentucky Coffeetree",
+      "Genus": "Gymnocladus",
+      "Species": "dioicus",
+      "size": "Large Tree",
+      "farmTotal": 19,
+      "approxAvailable": 19
+    },
+    {
+      "latin": "Halesia carolina 'Arnold Pink'",
+      "common": "Arnold Pink Carolina Silverbell",
+      "Genus": "Halesia",
+      "Species": "carolina",
+      "size": "Small Tree",
+      "farmTotal": 7,
+      "approxAvailable": 7
+    },
+    {
+      "latin": "Halesia carolina 'Rosy Ridge'",
+      "common": "Rosy Ridge Carolina Silverbell",
+      "Genus": "Halesia",
+      "Species": "carolina",
+      "size": "Small Tree",
+      "farmTotal": 11,
+      "approxAvailable": 0
+    },
+    {
+      "latin": "Hamamelis virginiana",
+      "common": "Common Witch Hazel",
+      "Genus": "Hamamelis",
+      "Species": "virginiana",
+      "size": "Small Tree",
+      "farmTotal": 407,
+      "approxAvailable": 46
+    },
+    {
+      "latin": "Ilex aquifolium x cornuta 'Nellie R. Stevens'",
+      "common": "Nellie R. Stevens Holly",
+      "Genus": "Ilex",
+      "Species": "aquifolium x cornuta",
+      "size": "Medium Tree",
+      "farmTotal": 99,
+      "approxAvailable": 0
+    },
+    {
+      "latin": "Ilex opaca",
+      "common": "American Holly",
+      "Genus": "Ilex",
+      "Species": "opaca",
+      "size": "Medium Tree",
+      "farmTotal": 40,
+      "approxAvailable": 17
+    },
+    {
+      "latin": "Ilex opaca 'Greenleaf'",
+      "common": "Greenleaf American Holly",
+      "Genus": "Ilex",
+      "Species": "opaca",
+      "size": "Medium Tree",
+      "farmTotal": 497,
+      "approxAvailable": 0
+    },
+    {
+      "latin": "Juniperus virginiana",
+      "common": "Eastern Redcedar",
+      "Genus": "Juniperus",
+      "Species": "virginiana",
+      "size": "Medium Tree",
+      "farmTotal": 55,
+      "approxAvailable": 55
+    },
+    {
+      "latin": "Juniperus virginiana 'Brodie'",
+      "common": "Brodie Eastern Redcedar",
+      "Genus": "Juniperus",
+      "Species": "virginiana",
+      "size": "Medium Tree",
+      "farmTotal": 138,
+      "approxAvailable": 138
+    },
+    {
+      "latin": "Koelreuteria paniculata",
+      "common": "Goldenrain Tree",
+      "Genus": "Koelreuteria",
+      "Species": "paniculata",
+      "size": "Medium Tree",
+      "farmTotal": 458,
+      "approxAvailable": 46
+    },
+    {
+      "latin": "Lagerstroemia indica",
+      "common": "Crapemyrtle",
+      "Genus": "Lagerstroemia",
+      "Species": "indica",
+      "size": "Small Tree",
+      "farmTotal": 112,
+      "approxAvailable": 0
+    },
+    {
+      "latin": "Lagerstroemia indica x fauriei 'Muskogee'",
+      "common": "Muskogee Crapemyrtle",
+      "Genus": "Lagerstroemia",
+      "Species": "indica x fauriei",
+      "size": "Small Tree",
+      "farmTotal": 162,
+      "approxAvailable": 12
+    },
+    {
+      "latin": "Lagerstroemia indica x fauriei 'Natchez'",
+      "common": "Natchez Crapemyrtle",
+      "Genus": "Lagerstroemia",
+      "Species": "indica x fauriei",
+      "size": "Small Tree",
+      "farmTotal": 172,
+      "approxAvailable": 19
+    },
+    {
+      "latin": "Liquidambar styraciflua",
+      "common": "Sweetgum",
+      "Genus": "Liquidambar",
+      "Species": "styraciflua",
+      "size": "Large Tree",
+      "farmTotal": 109,
+      "approxAvailable": 109
+    },
+    {
+      "latin": "Liquidambar styraciflua 'Happidaze'",
+      "common": "Happidaze Sweetgum",
+      "Genus": "Liquidambar",
+      "Species": "styraciflua",
+      "size": "Large Tree",
+      "farmTotal": 771,
+      "approxAvailable": 56
+    },
+    {
+      "latin": "Liriodendron tulipifera",
+      "common": "Tulip Poplar",
+      "Genus": "Liriodendron",
+      "Species": "tulipifera",
+      "size": "Large Tree",
+      "farmTotal": 712,
+      "approxAvailable": 407
+    },
+    {
+      "latin": "Maclura pomifera 'White Shield'",
+      "common": "White Shield Osage Orange",
+      "Genus": "Maclura",
+      "Species": "pomifera",
+      "size": "Large Tree",
+      "farmTotal": 19,
+      "approxAvailable": 19
+    },
+    {
+      "latin": "Magnolia acuminata x denudata 'Elizabeth'",
+      "common": "Elizabeth Magnolia",
+      "Genus": "Magnolia",
+      "Species": "acuminata x denudata",
+      "size": "Medium Tree",
+      "farmTotal": 13,
+      "approxAvailable": 13
+    },
+    {
+      "latin": "Magnolia grandiflora 'Bracken's Brown Beauty'",
+      "common": "Bracken's Brown Beauty Southern Magnolia",
+      "Genus": "Magnolia",
+      "Species": "grandiflora",
+      "size": "Large Tree",
+      "farmTotal": 1107,
+      "approxAvailable": 7
+    },
+    {
+      "latin": "Magnolia liliiflora x sprengeri 'Galaxy'",
+      "common": "Galaxy Magnolia",
+      "Genus": "Magnolia",
+      "Species": "liliiflora x sprengeri",
+      "size": "Small Tree",
+      "farmTotal": 5,
+      "approxAvailable": 5
+    },
+    {
+      "latin": "Magnolia virginiana",
+      "common": "Sweetbay Magnolia",
+      "Genus": "Magnolia",
+      "Species": "virginiana",
+      "size": "Small Tree",
+      "farmTotal": 41,
+      "approxAvailable": 41
+    },
+    {
+      "latin": "Magnolia virginiana 'Moonglow'",
+      "common": "Moonglow Sweetbay Magnolia",
+      "Genus": "Magnolia",
+      "Species": "virginiana",
+      "size": "Small Tree",
+      "farmTotal": 660,
+      "approxAvailable": 0
+    },
+    {
+      "latin": "Magnolia x loebneri 'Merrill'",
+      "common": "Merrill Loebner Magnolia",
+      "Genus": "Magnolia",
+      "Species": "x loebneri",
+      "size": "Small Tree",
+      "farmTotal": 44,
+      "approxAvailable": 0
+    },
+    {
+      "latin": "Malus 'Marilee'",
+      "common": "Marilee Crabapple",
+      "Genus": "Malus",
+      "Species": "speciosa",
+      "size": "Small Tree",
+      "farmTotal": 11,
+      "approxAvailable": 11
+    },
+    {
+      "latin": "Malus 'Sugar Tyme'",
+      "common": "Sugar Tyme Crabapple",
+      "Genus": "Malus",
+      "Species": "speciosa",
+      "size": "Small Tree",
+      "farmTotal": 97,
+      "approxAvailable": 0
+    },
+    {
+      "latin": "Nyssa sylvatica",
+      "common": "Blackgum",
+      "Genus": "Nyssa",
+      "Species": "sylvatica",
+      "size": "Medium Tree",
+      "farmTotal": 137,
+      "approxAvailable": 20
+    },
+    {
+      "latin": "Nyssa sylvatica 'Green Gable'",
+      "common": "Green Gable Blackgum",
+      "Genus": "Nyssa",
+      "Species": "sylvatica",
+      "size": "Medium Tree",
+      "farmTotal": 58,
+      "approxAvailable": 58
+    },
+    {
+      "latin": "Nyssa sylvatica 'Wildfire'",
+      "common": "Wildfire Blackgum",
+      "Genus": "Nyssa",
+      "Species": "sylvatica",
+      "size": "Medium Tree",
+      "farmTotal": 546,
+      "approxAvailable": 11
+    },
+    {
+      "latin": "Ostrya virginiana",
+      "common": "American Hop Hornbeam",
+      "Genus": "Ostrya",
+      "Species": "virginiana",
+      "size": "Small Tree",
+      "farmTotal": 751,
+      "approxAvailable": 34
+    },
+    {
+      "latin": "Oxydendrum arboreum",
+      "common": "Sourwood",
+      "Genus": "Oxydendrum",
+      "Species": "arboreum",
+      "size": "Medium Tree",
+      "farmTotal": 1,
+      "approxAvailable": 1
+    },
+    {
+      "latin": "Pinus taeda",
+      "common": "Loblolly Pine",
+      "Genus": "Pinus",
+      "Species": "taeda",
+      "size": "Large Tree",
+      "farmTotal": 244,
+      "approxAvailable": 244
+    },
+    {
+      "latin": "Pistacia chinensis",
+      "common": "Chinese Pistachio",
+      "Genus": "Pistacia",
+      "Species": "chinensis",
+      "size": "Medium Tree",
+      "farmTotal": 305,
+      "approxAvailable": 178
+    },
+    {
+      "latin": "Platanus occidentalis",
+      "common": "American Sycamore",
+      "Genus": "Platanus",
+      "Species": "occidentalis",
+      "size": "Large Tree",
+      "farmTotal": 120,
+      "approxAvailable": 0
+    },
+    {
+      "latin": "Platanus x acerifolia 'Exclamation'",
+      "common": "Exclamation London Plane Tree",
+      "Genus": "Platanus",
+      "Species": "x acerifolia",
+      "size": "Large Tree",
+      "farmTotal": 590,
+      "approxAvailable": 286
+    },
+    {
+      "latin": "Prunus cerasifera 'Krauter Vesuvius'",
+      "common": "Krauter Vesuvius Purple Leaf Plum",
+      "Genus": "Prunus",
+      "Species": "cerasifera",
+      "size": "Small Tree",
+      "farmTotal": 86,
+      "approxAvailable": 0
+    },
+    {
+      "latin": "Prunus serotina",
+      "common": "Black Cherry",
+      "Genus": "Prunus",
+      "Species": "serotina",
+      "size": "Medium Tree",
+      "farmTotal": 54,
+      "approxAvailable": 29
+    },
+    {
+      "latin": "Prunus serrulata 'Kwanzan'",
+      "common": "Kwanzan Flowering Cherry",
+      "Genus": "Prunus",
+      "Species": "serrulata",
+      "size": "Medium Tree",
+      "farmTotal": 360,
+      "approxAvailable": 135
+    },
+    {
+      "latin": "Prunus subhirtella 'Autumnalis'",
+      "common": "Autumnalis Higan Cherry",
+      "Genus": "Prunus",
+      "Species": "subhirtella",
+      "size": "Small Tree",
+      "farmTotal": 6,
+      "approxAvailable": 6
+    },
+    {
+      "latin": "Prunus x incamp 'Okame'",
+      "common": "Okame Flowering Cherry",
+      "Genus": "Prunus",
+      "Species": "x incamp",
+      "size": "Medium Tree",
+      "farmTotal": 736,
+      "approxAvailable": 0
+    },
+    {
+      "latin": "Prunus x yedoensis",
+      "common": "Yoshino Flowering Cherry",
+      "Genus": "Prunus",
+      "Species": "x yedoensis",
+      "size": "Medium Tree",
+      "farmTotal": 424,
+      "approxAvailable": 94
+    },
+    {
+      "latin": "Quercus alba",
+      "common": "White Oak",
+      "Genus": "Quercus",
+      "Species": "alba",
+      "size": "Large Tree",
+      "farmTotal": 523,
+      "approxAvailable": 65
+    },
+    {
+      "latin": "Quercus bicolor",
+      "common": "Swamp White Oak",
+      "Genus": "Quercus",
+      "Species": "bicolor",
+      "size": "Large Tree",
+      "farmTotal": 910,
+      "approxAvailable": 21
+    },
+    {
+      "latin": "Quercus coccinea",
+      "common": "Scarlet Oak",
+      "Genus": "Quercus",
+      "Species": "coccinea",
+      "size": "Large Tree",
+      "farmTotal": 573,
+      "approxAvailable": 49
+    },
+    {
+      "latin": "Quercus ilicifolia",
+      "common": "Bear Oak",
+      "Genus": "Quercus",
+      "Species": "ilicifolia",
+      "size": "Small Tree",
+      "farmTotal": 24,
+      "approxAvailable": 0
+    },
+    {
+      "latin": "Quercus imbricaria",
+      "common": "Shingle Oak",
+      "Genus": "Quercus",
+      "Species": "imbricaria",
+      "size": "Large Tree",
+      "farmTotal": 404,
+      "approxAvailable": 21
+    },
+    {
+      "latin": "Quercus lyrata",
+      "common": "Overcup Oak",
+      "Genus": "Quercus",
+      "Species": "lyrata",
+      "size": "Large Tree",
+      "farmTotal": 562,
+      "approxAvailable": 75
+    },
+    {
+      "latin": "Quercus macrocarpa",
+      "common": "Bur Oak",
+      "Genus": "Quercus",
+      "Species": "macrocarpa",
+      "size": "Large Tree",
+      "farmTotal": 25,
+      "approxAvailable": 25
+    },
+    {
+      "latin": "Quercus macrocarpa x robur 'Heritage'",
+      "common": "Hybrid Heritage Oak",
+      "Genus": "Quercus",
+      "Species": "macrocarpa x robur",
+      "size": "Large Tree",
+      "farmTotal": 1,
+      "approxAvailable": 1
+    },
+    {
+      "latin": "Quercus montana",
+      "common": "Rock Chestnut Oak",
+      "Genus": "Quercus",
+      "Species": "montana",
+      "size": "Large Tree",
+      "farmTotal": 27,
+      "approxAvailable": 2
+    },
+    {
+      "latin": "Quercus muehlenbergii",
+      "common": "Chinkapin Oak",
+      "Genus": "Quercus",
+      "Species": "muehlenbergii",
+      "size": "Medium Tree",
+      "farmTotal": 2,
+      "approxAvailable": 2
+    },
+    {
+      "latin": "Quercus nuttallii",
+      "common": "Nuttall Oak",
+      "Genus": "Quercus",
+      "Species": "nuttallii",
+      "size": "Large Tree",
+      "farmTotal": 966,
+      "approxAvailable": 269
+    },
+    {
+      "latin": "Quercus palustris",
+      "common": "Pin Oak",
+      "Genus": "Quercus",
+      "Species": "palustris",
+      "size": "Large Tree",
+      "farmTotal": 3,
+      "approxAvailable": 3
+    },
+    {
+      "latin": "Quercus phellos",
+      "common": "Willow Oak",
+      "Genus": "Quercus",
+      "Species": "phellos",
+      "size": "Large Tree",
+      "farmTotal": 1018,
+      "approxAvailable": 173
+    },
+    {
+      "latin": "Quercus rubra",
+      "common": "Red Oak",
+      "Genus": "Quercus",
+      "Species": "rubra",
+      "size": "Large Tree",
+      "farmTotal": 16,
+      "approxAvailable": 16
+    },
+    {
+      "latin": "Quercus shumardii",
+      "common": "Shumard Oak",
+      "Genus": "Quercus",
+      "Species": "shumardii",
+      "size": "Large Tree",
+      "farmTotal": 27,
+      "approxAvailable": 27
+    },
+    {
+      "latin": "Quercus stellata",
+      "common": "Post Oak",
+      "Genus": "Quercus",
+      "Species": "stellata",
+      "size": "Medium Tree",
+      "farmTotal": 2,
+      "approxAvailable": 2
+    },
+    {
+      "latin": "Styphnolobium japonicum 'Millstone'",
+      "common": "Millstone Japanese Pagodatree",
+      "Genus": "Sophora",
+      "Species": "japonica",
+      "size": "Large Tree",
+      "farmTotal": 1,
+      "approxAvailable": 1
+    },
+    {
+      "latin": "Taxodium ascendens",
+      "common": "Pond Cypress",
+      "Genus": "Taxodium",
+      "Species": "ascendens",
+      "size": "Large Tree",
+      "farmTotal": 19,
+      "approxAvailable": 19
+    },
+    {
+      "latin": "Taxodium distichum",
+      "common": "Bald Cypress",
+      "Genus": "Taxodium",
+      "Species": "distichum",
+      "size": "Large Tree",
+      "farmTotal": 1045,
+      "approxAvailable": 256
+    },
+    {
+      "latin": "Thuja standishii x plicata 'Green Giant'",
+      "common": "Green Giant Arborvitae",
+      "Genus": "Thuja",
+      "Species": "standishii x plicata",
+      "size": "Medium Tree",
+      "farmTotal": 305,
+      "approxAvailable": 0
+    },
+    {
+      "latin": "Tilia americana",
+      "common": "American Linden",
+      "Genus": "Tilia",
+      "Species": "americana",
+      "size": "Large Tree",
+      "farmTotal": 141,
+      "approxAvailable": 57
+    },
+    {
+      "latin": "Tilia americana 'American Sentry'",
+      "common": "American Sentry American Linden",
+      "Genus": "Tilia",
+      "Species": "americana",
+      "size": "Large Tree",
+      "farmTotal": 711,
+      "approxAvailable": 53
+    },
+    {
+      "latin": "Ulmus 'Accolade'",
+      "common": "Accolade Elm",
+      "Genus": "Ulmus",
+      "Species": "japonica x wilsoniana",
+      "size": "Large Tree",
+      "farmTotal": 61,
+      "approxAvailable": 0
+    },
+    {
+      "latin": "Ulmus 'Triumph'",
+      "common": "Triumph Elm",
+      "Genus": "Ulmus",
+      "Species": "japonica x wilsoniana",
+      "size": "Large Tree",
+      "farmTotal": 77,
+      "approxAvailable": 2
+    },
+    {
+      "latin": "Ulmus americana",
+      "common": "American Elm",
+      "Genus": "Ulmus",
+      "Species": "americana",
+      "size": "Large Tree",
+      "farmTotal": 9,
+      "approxAvailable": 9
+    },
+    {
+      "latin": "Ulmus americana 'Jefferson'",
+      "common": "Jefferson American Elm",
+      "Genus": "Ulmus",
+      "Species": "americana",
+      "size": "Large Tree",
+      "farmTotal": 425,
+      "approxAvailable": 13
+    },
+    {
+      "latin": "Ulmus americana 'Valley Forge'",
+      "common": "Valley Forge American Elm",
+      "Genus": "Ulmus",
+      "Species": "americana",
+      "size": "Large Tree",
+      "farmTotal": 55,
+      "approxAvailable": 55
+    },
+    {
+      "latin": "Ulmus parvifolia 'Bosque'",
+      "common": "Bosque Chinese Elm",
+      "Genus": "Ulmus",
+      "Species": "parvifolia",
+      "size": "Large Tree",
+      "farmTotal": 182,
+      "approxAvailable": 0
+    },
+    {
+      "latin": "Ulmus propinquia 'Emerald Sunshine'",
+      "common": "Emerald Sunshine Japanese Elm",
+      "Genus": "Ulmus",
+      "Species": "propinquia",
+      "size": "Large Tree",
+      "farmTotal": 19,
+      "approxAvailable": 19
+    },
+    {
+      "latin": "Zelkova serrata 'Green Vase'",
+      "common": "Green Vase Japanese Zelkova",
+      "Genus": "Zelkova",
+      "Species": "serrata",
+      "size": "Large Tree",
+      "farmTotal": 531,
+      "approxAvailable": 51
+    }
+  ]

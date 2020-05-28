@@ -7,15 +7,16 @@ class Nav extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
+      background: null,
       navType: props.navType,
       navLinks: props.navLinks,
       navBar: null,
     };
   }
   componentDidMount() {
-    if (this.state.navType == "external") {
+    if (this.state.navType === "external") {
       let externalNav = this.state.navLinks.map((item, index) => {
-        if (index != this.state.navLinks.length - 1) {
+        if (index !== this.state.navLinks.length - 1) {
           return (
             <>
               <div className="Nav__anchor-box">
@@ -37,9 +38,9 @@ class Nav extends React.Component {
         }
       });
       this.setState({ navBar: externalNav });
-    } else if (this.state.navType == "internal") {
+    } else if (this.state.navType === "internal") {
       let internalNav = this.state.navLinks.map((item, index) => {
-        if (index != this.state.navLinks.length - 1) {
+        if (index !== this.state.navLinks.length - 1) {
           return (
             <>
               <div className="Nav__anchor-box">
@@ -60,10 +61,13 @@ class Nav extends React.Component {
           );
         }
       });
-      this.setState({ navBar: internalNav });
+      this.setState({ navBar: internalNav, background: "grey" });
     }
   }
   render() {
+    if (this.state.background) {
+      return <div id="idTest" className="Nav grey">{this.state.navBar}</div>;
+    }
     return <div className="Nav">{this.state.navBar}</div>;
   }
 }
