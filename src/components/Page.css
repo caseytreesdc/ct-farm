@@ -1,8 +1,9 @@
 .Page {
-  margin: 5vh 10vw;
+  padding: 5vh 10vw;
   min-height: 50vh;
   display: flex;
   flex-direction: column;
+  background: rgb(224, 225, 225);
 }
 
 .Page__hero {

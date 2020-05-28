@@ -1,6 +1,8 @@
 import React from "react";
 import json from "../assets/speciesList2.json";
-import "./Species.css"
+import "./Species.css";
+import "./Trees.css";
+import "./Page.css";
 // import "./Checkbox.css";
 class Trees extends React.Component {
   constructor(props) {
@@ -15,6 +17,7 @@ class Trees extends React.Component {
 
   selection() {
     let checkBoxCollection = document.getElementsByClassName("Checkbox");
+
     let displayList = [];
     for (let i = 0; i < checkBoxCollection.length; i++) {
       if (checkBoxCollection[i].checked) {
@@ -35,11 +38,13 @@ class Trees extends React.Component {
                     <span className="Species__common">{element.common}</span>
                   </h3>
                   <p className="Species__info"></p>
-                  <p className="Species__info">ZONE: {element.zone}</p>
+                  <p className="Species__info">Size: {element.size}</p>
                   <p className="Species__info">
-                    MATURE HEIGHT, SPREAD: {element.height}', {element.spread}'
+                    Farm Total: {element.farmTotal}
                   </p>
-                  <p className="Species__info">NOTES: {element.notes}</p>
+                  <p className="Species__info">
+                    Estimated Available: {element.approxAvailable}
+                  </p>
                 </div>
               </div>
             );
@@ -57,7 +62,7 @@ class Trees extends React.Component {
 
   render() {
     return (
-      <div>
+      <div className="Trees Page">
         <div>
           <form className="">
             <p>Size</p>
@@ -84,7 +89,7 @@ class Trees extends React.Component {
             <label for="Large Tree">Large</label>
           </form>
         </div>
-        <div>{this.state.display}</div>
+        <div className="Trees__list">{this.state.display}</div>
       </div>
     );
   }
