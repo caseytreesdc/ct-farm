@@ -2,6 +2,8 @@ import React from "react";
 import json from "../../assets/speciesList2.json";
 import Logos from "../Logos";
 
+import treeImg from "/Users/tissakhosla/Projects/ct-farm/src/assets/treeRenders/acer-rebrum.jpg";
+
 import "../Species.css";
 import "./Trees.css";
 import "./Page.css";
@@ -15,39 +17,36 @@ class Trees extends React.Component {
     };
     this.handleClick = this.handleClick.bind(this);
     this.selection = this.selection.bind(this);
+    this.species = this.selection.bind(this);
   }
 
   selection() {
     let checkBoxCollection = document.getElementsByClassName("Checkbox");
-
-    let displayList = [];
+    let anyChecked = false;
     for (let i = 0; i < checkBoxCollection.length; i++) {
-      if (checkBoxCollection[i].checked) {
+      anyChecked = anyChecked || checkBoxCollection[i].checked;
+    }
+    let displayList = [];
+
+    for (let i = 0; i < checkBoxCollection.length; i++) {
+      if (checkBoxCollection[i].checked || !anyChecked) {
         let selectedProperty = checkBoxCollection[i].id;
-        console.log(selectedProperty);
         this.state.trees.forEach((element) => {
-          if (element.size === selectedProperty) {
+          if (element.size === selectedProperty || !anyChecked) {
             displayList.push(
               <div className="Species__card">
-                {/* <img
-                  className="Species__sketch"
-                  alt={element.common}
-                  src={process.env.PUBLIC_URL + "/img/" + element.sketch}
-                ></img> */}
                 <div>
                   <h3 className="Species__names">
                     <p className="Species__common">{element.common}</p>
                     <p className="Species__latin">{element.latin}</p>
                   </h3>
                   <p className="Species__info"></p>
-                  {/* <p className="Species__info">Size: {element.size}</p> */}
-                  <p className="Species__info">
-                    Farm Total: {element.farmTotal}
-                  </p>
-                  <p className="Species__info">
-                    Estimated Available: {element.approxAvailable}
-                  </p>
                 </div>
+                <img
+                  className="Species__sketch"
+                  alt={element.common}
+                  src={treeImg}
+                ></img>
               </div>
             );
           }
@@ -61,7 +60,9 @@ class Trees extends React.Component {
   handleClick() {
     this.selection();
   }
-
+  componentDidMount() {
+    this.selection();
+  }
   render() {
     return (
       <div className="Page">

@@ -7,7 +7,12 @@
   margin: 1vw;
   padding: 1vw;
   border-radius: 6px;
-  background: rgba(0,0,0,.1);
+  background: rgba(255, 255, 255);
+  opacity: .6;
+}
+
+.Species__card:hover {
+  opacity: 1;
 }
 
 .Species__names {
@@ -24,7 +29,7 @@
   
 }
 .Species__sketch {
-  width: 300px;
+  width: 100px;
 }
 .Species__latin {
   color: rgb(56, 124, 70);
