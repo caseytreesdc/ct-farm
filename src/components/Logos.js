@@ -7,14 +7,14 @@ import greyCTLogo from "../assets/logos/grey-ct-logo.png";
 
 function Logos() {
   return (
-    <div className="Splash__logo-container">
+    <div className="Logos-container">
       <img
-        className="Splash__logo"
+        className="Logos"
         src={greyCTLogo}
         alt="Casey Trees Logo"
       ></img>
       <img
-        className="Splash__logo"
+        className="Logos"
         src={greyDSCNLogo}
         alt="D.C. State Nursery Logo"
       ></img>

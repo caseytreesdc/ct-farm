@@ -1,9 +1,10 @@
-.Splash__logo-container {
+.Logos-container {
   display: flex;
   justify-content: flex-end;
+  width: fit-content;
 }
 
-.Splash__logo {
+.Logos {
   height: 120px;
   fill: white;
 }

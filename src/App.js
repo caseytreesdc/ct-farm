@@ -18,9 +18,9 @@ function App() {
       <Nav
         navType="internal"
         navLinks={[
-          { text: "CT FARM", path: "/" },
-          { text: "FULL INVENTORY", path: "/Trees" },
-          { text: "REQUEST", path: "/Request" },
+          { text: "CASEY TREE FARM", path: "/" },
+          { text: "TREES WE GROW", path: "/Trees" },
+          { text: "AVAILABILITY AND REQUEST", path: "/Request" },
         ]}
       ></Nav>
       <Switch>

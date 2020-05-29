@@ -86,10 +86,12 @@ class Trees extends React.Component {
             Please note that all listed measurements for mature height and
             spread are approximate.
           </p>
-          <Logos></Logos>
         </div>
         <div className="Trees">
-          <h1 className="Page__title">FULL INVENTORY</h1>
+          <div className="Trees__header">
+            <h1 className="Page__title">TREES WE GROW</h1>
+            <Logos></Logos>
+          </div>
           <form className="Trees__form">
             <p>Size</p>
             <input

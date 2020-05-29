@@ -1,11 +1,17 @@
 .Trees {
-    /* background: rgb(255,255,255); */
+  /* background: rgb(255,255,255); */
 }
 .Trees__form {
-    /* margin: 2vh 4vw; */
+  /* margin: 2vh 4vw; */
 }
+.Trees__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
 .Trees__list {
-    list-style: none;
-    display: flex;
-    flex-wrap: wrap;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
 }
