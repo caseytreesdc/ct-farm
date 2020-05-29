@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "2d1db697c120abfd91e093fa146c9fe9",
+    "revision": "edec3eb2a74920bfbc1317b647ed5e9e",
     "url": "/ct-farm/index.html"
   },
   {
-    "revision": "26925a97e62b8bcd4d02",
-    "url": "/ct-farm/static/css/main.ddf92631.chunk.css"
+    "revision": "1af8221b54966bb79a81",
+    "url": "/ct-farm/static/css/main.41825761.chunk.css"
   },
   {
-    "revision": "9b52a85c2175fcc7c44b",
-    "url": "/ct-farm/static/js/2.cfbcbd2e.chunk.js"
+    "revision": "552fd085eee4928b6a59",
+    "url": "/ct-farm/static/js/2.2c4daaa0.chunk.js"
   },
   {
     "revision": "c64c486544348f10a6d6c716950bc223",
-    "url": "/ct-farm/static/js/2.cfbcbd2e.chunk.js.LICENSE.txt"
+    "url": "/ct-farm/static/js/2.2c4daaa0.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "26925a97e62b8bcd4d02",
-    "url": "/ct-farm/static/js/main.178844bf.chunk.js"
+    "revision": "1af8221b54966bb79a81",
+    "url": "/ct-farm/static/js/main.46d35356.chunk.js"
   },
   {
     "revision": "c2ba7e114eef22b963a1",
@@ -30,6 +30,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "852ac866fcb699bd9e9458b880ded15b",
     "url": "/ct-farm/static/media/aboutHero.852ac866.jpg"
+  },
+  {
+    "revision": "16449f247c1aa7fbfab97240a08a21eb",
+    "url": "/ct-farm/static/media/acer-rebrum.16449f24.jpg"
   },
   {
     "revision": "5c86a610ad7ce01ff6cb07b714427864",
