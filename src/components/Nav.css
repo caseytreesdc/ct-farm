@@ -1,5 +1,6 @@
 .Nav {
   display: flex;
+  flex-wrap: wrap;
   font-family: zeitung-mono, cronos-pro, lato, sans-serif;
   padding: 2vw 2vw;
 }
