@@ -1,5 +1,5 @@
 import React from "react";
-import json from "../../assets/speciesList2.json";
+import json from "../../assets/speciesList3.json";
 
 import Species from "../Species";
 import Logos from "../Logos";
@@ -34,14 +34,14 @@ class Trees extends React.Component {
         this.state.trees.forEach((element) => {
           if (element.size === selectedProperty || !anyChecked) {
             displayList.push(
-              <Species common={element.common} latin={element.latin}></Species>
+              <Species common={element.common} latin={element.latin} imagePath={element.imagePath}></Species>
             );
           }
         });
       }
     }
+    console.dir(displayList.length);
     this.setState({ display: displayList });
-    console.dir(this.state.display);
   }
 
   alphabetizeByScientificName(speciesArray) {

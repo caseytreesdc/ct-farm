@@ -12,6 +12,10 @@
   opacity: .6;
 }
 
+.hidden {
+  display: none;
+}
+
 .Species__card:hover {
   opacity: 1;
 }
