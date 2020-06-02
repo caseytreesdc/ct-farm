@@ -1,8 +1,8 @@
 import React from "react";
 import json from "../../assets/speciesList2.json";
-import Logos from "../Logos";
 
-import treeImg from "/Users/tissakhosla/Projects/ct-farm/src/assets/treeRenders/acer-rebrum.jpg";
+import Species from "../Species";
+import Logos from "../Logos";
 
 import "../Species.css";
 import "./Trees.css";
@@ -12,12 +12,12 @@ class Trees extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      trees: json,
+      trees: this.alphabetizeByScientificName(json),
       display: [],
     };
     this.handleClick = this.handleClick.bind(this);
+    this.alphabetize = this.alphabetizeByScientificName.bind(this);
     this.selection = this.selection.bind(this);
-    this.species = this.selection.bind(this);
   }
 
   selection() {
@@ -34,20 +34,7 @@ class Trees extends React.Component {
         this.state.trees.forEach((element) => {
           if (element.size === selectedProperty || !anyChecked) {
             displayList.push(
-              <div className="Species__card">
-                <div>
-                  <h3 className="Species__names">
-                    <p className="Species__common">{element.common}</p>
-                    <p className="Species__latin">{element.latin}</p>
-                  </h3>
-                  <p className="Species__info"></p>
-                </div>
-                <img
-                  className="Species__sketch"
-                  alt={element.common}
-                  src={treeImg}
-                ></img>
-              </div>
+              <Species common={element.common} latin={element.latin}></Species>
             );
           }
         });
@@ -55,6 +42,12 @@ class Trees extends React.Component {
     }
     this.setState({ display: displayList });
     console.dir(this.state.display);
+  }
+
+  alphabetizeByScientificName(speciesArray) {
+    return speciesArray.sort((tree_N, tree_N1) =>
+      tree_N.latin > tree_N1.latin ? 1 : -1
+    );
   }
 
   handleClick() {

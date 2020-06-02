@@ -1,8 +1,9 @@
 .Species__card {
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
   align-items: center;
-  width: 20vw;
+  width: 23vw;
   /* border: solid 1px grey; */
   margin: 1vw;
   padding: 1vw;
@@ -29,7 +30,7 @@
   
 }
 .Species__sketch {
-  width: 100px;
+  width: 8vw;
 }
 .Species__latin {
   color: rgb(56, 124, 70);

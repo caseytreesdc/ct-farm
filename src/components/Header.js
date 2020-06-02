@@ -2,6 +2,7 @@ import React from "react";
 import "./Header.css";
 
 import Nav from "./Nav";
+import Breadcrumbs from "./Breadcrumbs"
 import "./Breadcrumbs.css";
 
 import logo from "../assets/logos/SVG/header-logo.svg";
@@ -32,7 +33,7 @@ const Header = () => {
           ]}
         ></Nav>
       </div>
-      <div className="Breadcrumbs">plant > from the farm</div>
+      <Breadcrumbs></Breadcrumbs>
     </div>
   );
 };
