@@ -751,13 +751,13 @@
   },
   {
     "latin": "Lagerstroemia indica",
-    "common": "Crapemyrtle",
+    "common": "Crape Myrtle",
     "genus": "Lagerstroemia",
     "species": "indica",
     "size": "Small Tree",
     "farmTotal": 112,
     "approxAvailable": 0,
-    "imagePath": ""
+    "imagePath": "https://caseytrees.org/wp-content/uploads/2020/06/crape-myrtle.png"
   },
   {
     "latin": "Lagerstroemia indica x fauriei 'Muskogee'",
