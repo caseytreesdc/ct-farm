@@ -1,11 +1,11 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "52fde144e3a896611834e2c9b4b55266",
+    "revision": "808e5383a2f523a9a284c530c60a9d38",
     "url": "/ct-farm/index.html"
   },
   {
-    "revision": "b9a2ea1baa9745c4391b",
-    "url": "/ct-farm/static/css/main.a66b110c.chunk.css"
+    "revision": "bec5565482ffcc8f0b65",
+    "url": "/ct-farm/static/css/main.49438bb3.chunk.css"
   },
   {
     "revision": "990250db647ae8781372",
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/ct-farm/static/js/2.80ed299a.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "b9a2ea1baa9745c4391b",
-    "url": "/ct-farm/static/js/main.20298d66.chunk.js"
+    "revision": "bec5565482ffcc8f0b65",
+    "url": "/ct-farm/static/js/main.1c682fb6.chunk.js"
   },
   {
     "revision": "c2ba7e114eef22b963a1",
@@ -30,10 +30,6 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "852ac866fcb699bd9e9458b880ded15b",
     "url": "/ct-farm/static/media/aboutHero.852ac866.jpg"
-  },
-  {
-    "revision": "16449f247c1aa7fbfab97240a08a21eb",
-    "url": "/ct-farm/static/media/acer-rebrum.16449f24.jpg"
   },
   {
     "revision": "5c86a610ad7ce01ff6cb07b714427864",
