@@ -23,7 +23,10 @@ const Footer = (props) => {
       </div>
       {[
         [
-          new Hyperlink("Your City, Your Trees", "https://caseytreesdc.github.io/ct-videos/ycyt"),
+          new Hyperlink(
+            "Your City, Your Trees",
+            "https://caseytreesdc.github.io/ct-videos/ycyt"
+          ),
           new Hyperlink(
             "Branch Out",
             "https://caseytreesdc.github.io/ct-videos/branch-out"
@@ -31,7 +34,7 @@ const Footer = (props) => {
           new Hyperlink(
             "Tea and Trees",
             "https://caseytreesdc.github.io/ct-videos/tea-and-trees"
-          )
+          ),
         ],
         [
           new Hyperlink("Water", "https://caseytrees.org/take-action/water/"),

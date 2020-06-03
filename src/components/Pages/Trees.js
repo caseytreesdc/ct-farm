@@ -1,5 +1,5 @@
 import React from "react";
-import json from "../../assets/speciesList3.json";
+import json from "../../assets/speciesList4.json";
 
 import Species from "../Species";
 import Logos from "../Logos";
@@ -34,13 +34,17 @@ class Trees extends React.Component {
         this.state.trees.forEach((element) => {
           if (element.size === selectedProperty || !anyChecked) {
             displayList.push(
-              <Species common={element.common} latin={element.latin} imagePath={element.imagePath}></Species>
+              <Species
+                common={element.common}
+                wpLink={element.wpLink}
+                latin={element.latin}
+                imagePath={element.imagePath}
+              ></Species>
             );
           }
         });
       }
     }
-    console.dir(displayList.length);
     this.setState({ display: displayList });
   }
 
@@ -93,21 +97,21 @@ class Trees extends React.Component {
               type="checkbox"
               id="Small Tree"
             ></input>
-            <label for="Small Tree">Small</label>
+            <label htmlFor="Small Tree">Small</label>
             <input
               onClick={this.handleClick}
               className="Checkbox"
               type="checkbox"
               id="Medium Tree"
             ></input>
-            <label for="Medium Tree">Medium</label>
+            <label htmlFor="Medium Tree">Medium</label>
             <input
               onClick={this.handleClick}
               className="Checkbox"
               type="checkbox"
               id="Large Tree"
             ></input>
-            <label for="Large Tree">Large</label>
+            <label htmlFor="Large Tree">Large</label>
           </form>
           <div className="Trees__list">{this.state.display}</div>
         </div>
