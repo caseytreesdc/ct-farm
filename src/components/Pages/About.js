@@ -16,6 +16,7 @@ function About() {
         long term soil health and productivity, while safeguarding the overall
         environment.
       </p>
+      <h1 className="Page__title">Sustainability at Casey Tree Farm</h1>
       <p className="Page__p">
         Our vision is the production of sustainably grown, high quality trees to
         help communities meet their tree canopy goals. Along with meticulous
@@ -28,13 +29,11 @@ function About() {
         counterparts, reducing environmental impacts and transportation costs,
         and simplifying planting.
       </p>
-      <h1 className="Page__title">Sustainability at Casey Tree Farm</h1>
       <img
         src={comingSoon}
         className="Page__hero"
         alt="cute flower buds signifying that this section is growing!"
       ></img>
-      <p className="Page__p">Coming soon</p>
       <p className="Page__contact">CONTACT | 202.257.3666</p>
       <Logos></Logos>
     </div>

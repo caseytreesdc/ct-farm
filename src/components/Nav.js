@@ -66,7 +66,16 @@ class Nav extends React.Component {
   }
   render() {
     if (this.state.background) {
-      return <div id="idTest" className="Nav grey">{this.state.navBar}</div>;
+      return (
+        <div
+          onClick={() => {
+            document.getElementsByClassName("Nav")[1].scrollIntoView();
+          }}
+          className="Nav grey"
+        >
+          {this.state.navBar}
+        </div>
+      );
     }
     return <div className="Nav">{this.state.navBar}</div>;
   }
