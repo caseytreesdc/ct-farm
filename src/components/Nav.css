@@ -38,3 +38,9 @@
 .Nav__anchor-box .Nav__anchor:hover {
   color: rgb(255, 255, 255);
 }
+
+@media only screen and (max-width: 600px) {
+  .Nav__external {
+    display: none;
+  }
+}

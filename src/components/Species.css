@@ -9,7 +9,7 @@
   padding: 1vw;
   border-radius: 6px;
   background: rgba(255, 255, 255);
-  opacity: .6;
+  opacity: 0.6;
 }
 
 .hidden {
@@ -24,14 +24,14 @@
   margin: 0 auto;
 }
 
-.Species__common, .Species__latin {
+.Species__common,
+.Species__latin {
   margin: 0 auto;
 }
 
 .Species__common,
 .Species__info {
   color: rgb(40, 16, 15);
-  
 }
 .Species__sketch {
   width: 8vw;
@@ -43,4 +43,10 @@
 .Species__info {
   font-size: 18px;
   margin: 0 auto;
+}
+
+@media only screen and (max-width: 600px) {
+  .Species__card {
+    width: 80vw;
+  }
 }

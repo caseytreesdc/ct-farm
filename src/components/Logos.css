@@ -8,3 +8,9 @@
   height: 120px;
   fill: white;
 }
+
+@media only screen and (max-width: 600px) {
+  .Logos-container {
+    display: none;
+  }
+}

@@ -71,13 +71,13 @@ class Nav extends React.Component {
           onClick={() => {
             document.getElementsByClassName("Nav")[1].scrollIntoView();
           }}
-          className="Nav grey"
+          className="Nav grey Nav__internal"
         >
           {this.state.navBar}
         </div>
       );
     }
-    return <div className="Nav">{this.state.navBar}</div>;
+    return <div className="Nav Nav__external">{this.state.navBar}</div>;
   }
 }
 
