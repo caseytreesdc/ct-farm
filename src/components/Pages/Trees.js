@@ -1,5 +1,5 @@
 import React from "react";
-import json from "../../assets/speciesList4.json";
+import json from "../../assets/speciesList5.json";
 
 import Species from "../Species";
 import Logos from "../Logos";
@@ -12,8 +12,8 @@ class Trees extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      trees: this.alphabetizeByScientificName(json),
-      display: [],
+      trees: json,
+      display: this.alphabetizeByScientificName([]),
     };
     this.handleClick = this.handleClick.bind(this);
     this.alphabetize = this.alphabetizeByScientificName.bind(this);
@@ -41,6 +41,12 @@ class Trees extends React.Component {
                 imagePath={element.imagePath}
               ></Species>
             );
+          }
+          if (
+            (selectedProperty === "Evergreen" ||
+              selectedProperty === "Flowering") &&
+            (element.Evergreen || element.Flowering)
+          ) {
           }
         });
       }
@@ -90,28 +96,30 @@ class Trees extends React.Component {
             <Logos></Logos>
           </div>
           <form className="Trees__form">
-            <p>Size</p>
-            <input
-              onClick={this.handleClick}
-              className="Checkbox"
-              type="checkbox"
-              id="Small Tree"
-            ></input>
-            <label htmlFor="Small Tree">Small</label>
-            <input
-              onClick={this.handleClick}
-              className="Checkbox"
-              type="checkbox"
-              id="Medium Tree"
-            ></input>
-            <label htmlFor="Medium Tree">Medium</label>
-            <input
-              onClick={this.handleClick}
-              className="Checkbox"
-              type="checkbox"
-              id="Large Tree"
-            ></input>
-            <label htmlFor="Large Tree">Large</label>
+            <div>
+              <p>Size</p>
+              <input
+                onClick={this.handleClick}
+                className="Checkbox"
+                type="checkbox"
+                id="Small Tree"
+              ></input>
+              <label htmlFor="Small Tree">Small</label>
+              <input
+                onClick={this.handleClick}
+                className="Checkbox"
+                type="checkbox"
+                id="Medium Tree"
+              ></input>
+              <label htmlFor="Medium Tree">Medium</label>
+              <input
+                onClick={this.handleClick}
+                className="Checkbox"
+                type="checkbox"
+                id="Large Tree"
+              ></input>
+              <label htmlFor="Large Tree">Large</label>
+            </div>
           </form>
           <div className="Trees__list">{this.state.display}</div>
         </div>
