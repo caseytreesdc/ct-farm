@@ -1,0 +1,17 @@
+.Request__iframe-container {
+  width: 800px;
+  display: flex;
+  flex-direction: column;
+  background: #3768b2;
+  text-align: center;
+  font-family: zeitung-mono, cronos-pro, lato, sans-serif;
+  font-weight: 100;
+}
+
+.Request__iframe {
+  background: rgb(224, 225, 225);
+}
+
+.Request__formTitle {
+  padding: 2vh 0;
+}
