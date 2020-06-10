@@ -15,41 +15,202 @@ class Trees extends React.Component {
       trees: json,
       display: this.alphabetizeByScientificName([]),
     };
+
     this.handleClick = this.handleClick.bind(this);
     this.alphabetize = this.alphabetizeByScientificName.bind(this);
+    this.checkArrayMatch = this.checkArrayMatch.bind(this);
+    this.aNewFunction = this.aNewFunction.bind(this);
+    this.seeTheseTrees = this.seeTheseTrees.bind(this);
     this.selection = this.selection.bind(this);
   }
 
-  selection() {
-    let checkBoxCollection = document.getElementsByClassName("Checkbox");
-    let anyChecked = false;
-    for (let i = 0; i < checkBoxCollection.length; i++) {
-      anyChecked = anyChecked || checkBoxCollection[i].checked;
+  checkArrayMatch(arr1, arr2) {
+    for (let i = 0; i < arr1.length; i++) {
+      if (arr1[i] !== arr2[i]) return false;
     }
+    return true;
+  }
+
+  aNewFunction() {
     let displayList = [];
 
-    for (let i = 0; i < checkBoxCollection.length; i++) {
-      if (checkBoxCollection[i].checked || !anyChecked) {
-        let selectedProperty = checkBoxCollection[i].id;
-        this.state.trees.forEach((element) => {
-          if (element.size === selectedProperty || !anyChecked) {
-            displayList.push(
-              <Species
-                common={element.common}
-                wpLink={element.wpLink}
-                latin={element.latin}
-                imagePath={element.imagePath}
-              ></Species>
-            );
-          }
-          if (
-            (selectedProperty === "Evergreen" ||
-              selectedProperty === "Flowering") &&
-            (element.Evergreen || element.Flowering)
-          ) {
-          }
-        });
+    this.state.trees.forEach((tree) => {
+      displayList.push(
+        <Species
+          common={tree.common}
+          wpLink={tree.wpLink}
+          latin={tree.latin}
+          imagePath={tree.imagePath}
+        ></Species>
+      );
+    });
+
+    let checkboxCollection = document.getElementsByClassName("Checkbox");
+    let checkedArray = [];
+    for (let i = 0; i < checkboxCollection.length; i++) {
+      checkedArray.push(checkboxCollection[i].checked);
+    }
+    console.log(checkedArray);
+
+    if (
+      this.checkArrayMatch(checkedArray, [false, false, false, false, false])
+    ) {
+      console.log("// none checked");
+    } else if (
+      this.checkArrayMatch(checkedArray, [true, false, false, false, false])
+    ) {
+      console.log("// S checked");
+    } else if (
+      this.checkArrayMatch(checkedArray, [false, true, false, false, false])
+    ) {
+      console.log("// M checked");
+    } else if (
+      this.checkArrayMatch(checkedArray, [false, false, true, false, false])
+    ) {
+      console.log("// L checked");
+    } else if (
+      this.checkArrayMatch(checkedArray, [true, true, false, false, false])
+    ) {
+      console.log("// S M checked");
+    } else if (
+      this.checkArrayMatch(checkedArray, [false, true, true, false, false])
+    ) {
+      console.log("// M L checked");
+    } else if (
+      this.checkArrayMatch(checkedArray, [true, false, true, false, false])
+    ) {
+      console.log("// S L checked");
+    } else if (
+      this.checkArrayMatch(checkedArray, [true, true, true, false, false])
+    ) {
+      console.log("// S M L checked");
+    } else if (
+      this.checkArrayMatch(checkedArray, [false, false, false, true, false])
+    ) {
+      console.log("// + E checked");
+    } else if (
+      this.checkArrayMatch(checkedArray, [true, false, false, true, false])
+    ) {
+      console.log("// S + E checked");
+    } else if (
+      this.checkArrayMatch(checkedArray, [false, true, false, true, false])
+    ) {
+      console.log("// M + E checked");
+    } else if (
+      this.checkArrayMatch(checkedArray, [false, false, true, true, false])
+    ) {
+      console.log("// L + E checked");
+    } else if (
+      this.checkArrayMatch(checkedArray, [true, true, false, true, false])
+    ) {
+      console.log("// S M + E checked");
+    } else if (
+      this.checkArrayMatch(checkedArray, [false, true, true, true, false])
+    ) {
+      console.log("// M L + E checked");
+    } else if (
+      this.checkArrayMatch(checkedArray, [true, false, true, true, false])
+    ) {
+      console.log("// S L + E checked");
+    } else if (
+      this.checkArrayMatch(checkedArray, [true, true, true, true, false])
+    ) {
+      console.log("// S M L + E checked");
+    } else if (
+      this.checkArrayMatch(checkedArray, [false, false, false, false, true])
+    ) {
+      console.log("// + F checked");
+    } else if (
+      this.checkArrayMatch(checkedArray, [true, false, false, false, true])
+    ) {
+      console.log("// S + F checked");
+    } else if (
+      this.checkArrayMatch(checkedArray, [false, true, false, false, true])
+    ) {
+      console.log("// M + F checked");
+    } else if (
+      this.checkArrayMatch(checkedArray, [false, false, true, false, true])
+    ) {
+      console.log("// L + F checked");
+    } else if (
+      this.checkArrayMatch(checkedArray, [true, true, false, false, true])
+    ) {
+      console.log("// S M + F checked");
+    } else if (
+      this.checkArrayMatch(checkedArray, [false, true, true, false, true])
+    ) {
+      console.log("// M L + F checked");
+    } else if (
+      this.checkArrayMatch(checkedArray, [true, false, true, false, true])
+    ) {
+      console.log("// S L + F checked");
+    } else if (
+      this.checkArrayMatch(checkedArray, [true, true, true, false, true])
+    ) {
+      console.log("// S M L + F checked");
+    } else if (
+      this.checkArrayMatch(checkedArray, [false, false, false, true, true])
+    ) {
+      console.log("// + E F checked");
+    } else if (
+      this.checkArrayMatch(checkedArray, [true, false, false, true, true])
+    ) {
+      console.log("// S + E F checked");
+    } else if (
+      this.checkArrayMatch(checkedArray, [false, true, false, true, true])
+    ) {
+      console.log("// M + E F checked");
+    } else if (
+      this.checkArrayMatch(checkedArray, [false, false, true, true, true])
+    ) {
+      console.log("// L + E F checked");
+    } else if (
+      this.checkArrayMatch(checkedArray, [true, true, false, true, true])
+    ) {
+      console.log("// S M + E F checked");
+    } else if (
+      this.checkArrayMatch(checkedArray, [false, true, true, true, true])
+    ) {
+      console.log("// M L + E F checked");
+    } else if (
+      this.checkArrayMatch(checkedArray, [true, false, true, true, true])
+    ) {
+      console.log("// S L + E F checked");
+    } else if (
+      this.checkArrayMatch(checkedArray, [true, true, true, true, true])
+    ) {
+      console.log("// S M L + E F checked");
+    } else console.log("popo");
+
+    this.setState({ display: displayList });
+  }
+
+  selection() {
+    let anyChecked = false;
+    let displayList = [];
+
+    //checks to see if size boxes are checked
+    let checkboxCollection = document.getElementsByClassName("Checkbox");
+    for (let i = 0; i < checkboxCollection.length; i++) {
+      anyChecked = anyChecked || checkboxCollection[i].checked;
+    }
+    if (!anyChecked) {
+      this.state.trees.forEach((tree) => {
+        displayList.push(
+          <Species
+            common={tree.common}
+            wpLink={tree.wpLink}
+            latin={tree.latin}
+            imagePath={tree.imagePath}
+          ></Species>
+        );
+      });
+    } else {
+      let resultsArray = [];
+      for (let i = 0; i < checkboxCollection.length; i++) {
+        resultsArray.push(checkboxCollection[i].checked);
       }
+      // console.log(resultsArray);
     }
     this.setState({ display: displayList });
   }
@@ -61,10 +222,12 @@ class Trees extends React.Component {
   }
 
   handleClick() {
-    this.selection();
+    this.aNewFunction();
+    // this.selection();
   }
   componentDidMount() {
-    this.selection();
+    this.aNewFunction();
+    // this.selection();
   }
   render() {
     return (
@@ -97,28 +260,47 @@ class Trees extends React.Component {
           </div>
           <form className="Trees__form">
             <div>
-              <p>Size</p>
-              <input
-                onClick={this.handleClick}
-                className="Checkbox"
-                type="checkbox"
-                id="Small Tree"
-              ></input>
-              <label htmlFor="Small Tree">Small</label>
-              <input
-                onClick={this.handleClick}
-                className="Checkbox"
-                type="checkbox"
-                id="Medium Tree"
-              ></input>
-              <label htmlFor="Medium Tree">Medium</label>
-              <input
-                onClick={this.handleClick}
-                className="Checkbox"
-                type="checkbox"
-                id="Large Tree"
-              ></input>
-              <label htmlFor="Large Tree">Large</label>
+              <fieldset>
+                <legend>Mature Tree Size</legend>
+                <input
+                  onClick={this.handleClick}
+                  className="Checkbox treeSize"
+                  type="checkbox"
+                  id="Small Tree"
+                ></input>
+                <label htmlFor="Small Tree">Small</label>
+                <input
+                  onClick={this.handleClick}
+                  className="Checkbox treeSize"
+                  type="checkbox"
+                  id="Medium Tree"
+                ></input>
+                <label htmlFor="Medium Tree">Medium</label>
+                <input
+                  onClick={this.handleClick}
+                  className="Checkbox treeSize"
+                  type="checkbox"
+                  id="Large Tree"
+                ></input>
+                <label htmlFor="Large Tree">Large</label>
+              </fieldset>
+              <fieldset>
+                <legend>Flowers and Leaves</legend>
+                <input
+                  onClick={this.handleClick}
+                  className="Checkbox floweringEvergreen"
+                  type="checkbox"
+                  id="Evergreen"
+                ></input>
+                <label htmlFor="Evergreen">Evergreen</label>
+                <input
+                  onClick={this.handleClick}
+                  className="Checkbox floweringEvergreen"
+                  type="checkbox"
+                  id="Flowering"
+                ></input>
+                <label htmlFor="Flowering">Flowering</label>
+              </fieldset>
             </div>
           </form>
           <div className="Trees__list">{this.state.display}</div>
