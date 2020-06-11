@@ -1,13 +1,25 @@
 .Trees {
   min-height: 80vh;
 }
-.Trees__form {
-  /* margin: 2vh 4vw; */
-}
+
 .Trees__header {
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
+}
+
+.Trees__fieldset {
+  border-radius: 4px;
+  width: 50%;
+  margin: 2vh 2vw;
+}
+
+.Trees__legend {
+  font-weight: bold;
+}
+
+.Checkbox {
+  margin: 0 .8vw;
 }
 
 .Trees__list {

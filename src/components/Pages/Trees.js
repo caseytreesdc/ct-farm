@@ -679,49 +679,47 @@ class Trees extends React.Component {
             <Logos></Logos>
           </div>
           <form className="Trees__form">
-            <div>
-              <fieldset>
-                <legend>Mature Tree Size</legend>
-                <input
-                  onClick={this.handleClick}
-                  className="Checkbox treeSize"
-                  type="checkbox"
-                  id="Small Tree"
-                ></input>
-                <label htmlFor="Small Tree">Small</label>
-                <input
-                  onClick={this.handleClick}
-                  className="Checkbox treeSize"
-                  type="checkbox"
-                  id="Medium Tree"
-                ></input>
-                <label htmlFor="Medium Tree">Medium</label>
-                <input
-                  onClick={this.handleClick}
-                  className="Checkbox treeSize"
-                  type="checkbox"
-                  id="Large Tree"
-                ></input>
-                <label htmlFor="Large Tree">Large</label>
-              </fieldset>
-              <fieldset>
-                <legend>Flowers and Leaves</legend>
-                <input
-                  onClick={this.handleClick}
-                  className="Checkbox floweringEvergreen"
-                  type="checkbox"
-                  id="Evergreen"
-                ></input>
-                <label htmlFor="Evergreen">Evergreen</label>
-                <input
-                  onClick={this.handleClick}
-                  className="Checkbox floweringEvergreen"
-                  type="checkbox"
-                  id="Flowering"
-                ></input>
-                <label htmlFor="Flowering">Flowering</label>
-              </fieldset>
-            </div>
+            <fieldset className="Trees__fieldset">
+              <legend className="Trees__legend">Mature Tree Size</legend>
+              <input
+                onClick={this.handleClick}
+                className="Checkbox treeSize"
+                type="checkbox"
+                id="Small Tree"
+              ></input>
+              <label htmlFor="Small Tree">Small</label>
+              <input
+                onClick={this.handleClick}
+                className="Checkbox treeSize"
+                type="checkbox"
+                id="Medium Tree"
+              ></input>
+              <label htmlFor="Medium Tree">Medium</label>
+              <input
+                onClick={this.handleClick}
+                className="Checkbox treeSize"
+                type="checkbox"
+                id="Large Tree"
+              ></input>
+              <label htmlFor="Large Tree">Large</label>
+            </fieldset>
+            <fieldset className="Trees__fieldset">
+              <legend className="Trees__legend">Flowers and Leaves</legend>
+              <input
+                onClick={this.handleClick}
+                className="Checkbox floweringEvergreen"
+                type="checkbox"
+                id="Evergreen"
+              ></input>
+              <label htmlFor="Evergreen">Evergreen</label>
+              <input
+                onClick={this.handleClick}
+                className="Checkbox floweringEvergreen"
+                type="checkbox"
+                id="Flowering"
+              ></input>
+              <label htmlFor="Flowering">Flowering</label>
+            </fieldset>
           </form>
           <div className="Trees__list">{this.state.display}</div>
         </div>
