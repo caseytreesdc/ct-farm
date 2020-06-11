@@ -20,7 +20,6 @@ class Trees extends React.Component {
     this.alphabetize = this.alphabetizeByScientificName.bind(this);
     this.checkArrayMatch = this.checkArrayMatch.bind(this);
     this.aNewFunction = this.aNewFunction.bind(this);
-    this.seeTheseTrees = this.seeTheseTrees.bind(this);
     this.selection = this.selection.bind(this);
   }
 
@@ -34,17 +33,6 @@ class Trees extends React.Component {
   aNewFunction() {
     let displayList = [];
 
-    this.state.trees.forEach((tree) => {
-      displayList.push(
-        <Species
-          common={tree.common}
-          wpLink={tree.wpLink}
-          latin={tree.latin}
-          imagePath={tree.imagePath}
-        ></Species>
-      );
-    });
-
     let checkboxCollection = document.getElementsByClassName("Checkbox");
     let checkedArray = [];
     for (let i = 0; i < checkboxCollection.length; i++) {
@@ -56,131 +44,563 @@ class Trees extends React.Component {
       this.checkArrayMatch(checkedArray, [false, false, false, false, false])
     ) {
       console.log("// none checked");
+      this.state.trees.forEach((tree) => {
+        displayList.push(
+          <Species
+            common={tree.common}
+            wpLink={tree.wpLink}
+            latin={tree.latin}
+            imagePath={tree.imagePath}
+          ></Species>
+        );
+      });
     } else if (
       this.checkArrayMatch(checkedArray, [true, false, false, false, false])
     ) {
       console.log("// S checked");
+      this.state.trees.forEach((tree) => {
+        if (tree.size === "Small Tree") {
+          displayList.push(
+            <Species
+              common={tree.common}
+              wpLink={tree.wpLink}
+              latin={tree.latin}
+              imagePath={tree.imagePath}
+            ></Species>
+          );
+        }
+      });
     } else if (
       this.checkArrayMatch(checkedArray, [false, true, false, false, false])
     ) {
       console.log("// M checked");
+      this.state.trees.forEach((tree) => {
+        if (tree.size === "Medium Tree") {
+          displayList.push(
+            <Species
+              common={tree.common}
+              wpLink={tree.wpLink}
+              latin={tree.latin}
+              imagePath={tree.imagePath}
+            ></Species>
+          );
+        }
+      });
     } else if (
       this.checkArrayMatch(checkedArray, [false, false, true, false, false])
     ) {
       console.log("// L checked");
+      this.state.trees.forEach((tree) => {
+        if (tree.size === "Large Tree") {
+          displayList.push(
+            <Species
+              common={tree.common}
+              wpLink={tree.wpLink}
+              latin={tree.latin}
+              imagePath={tree.imagePath}
+            ></Species>
+          );
+        }
+      });
     } else if (
       this.checkArrayMatch(checkedArray, [true, true, false, false, false])
     ) {
       console.log("// S M checked");
+      this.state.trees.forEach((tree) => {
+        if (tree.size === "Small Tree" || tree.size === "Medium Tree") {
+          displayList.push(
+            <Species
+              common={tree.common}
+              wpLink={tree.wpLink}
+              latin={tree.latin}
+              imagePath={tree.imagePath}
+            ></Species>
+          );
+        }
+      });
     } else if (
       this.checkArrayMatch(checkedArray, [false, true, true, false, false])
     ) {
       console.log("// M L checked");
+      this.state.trees.forEach((tree) => {
+        if (tree.size === "Medium Tree" || tree.size === "Large Tree") {
+          displayList.push(
+            <Species
+              common={tree.common}
+              wpLink={tree.wpLink}
+              latin={tree.latin}
+              imagePath={tree.imagePath}
+            ></Species>
+          );
+        }
+      });
     } else if (
       this.checkArrayMatch(checkedArray, [true, false, true, false, false])
     ) {
       console.log("// S L checked");
+      this.state.trees.forEach((tree) => {
+        if (tree.size === "Small Tree" || tree.size === "Large Tree") {
+          displayList.push(
+            <Species
+              common={tree.common}
+              wpLink={tree.wpLink}
+              latin={tree.latin}
+              imagePath={tree.imagePath}
+            ></Species>
+          );
+        }
+      });
     } else if (
       this.checkArrayMatch(checkedArray, [true, true, true, false, false])
     ) {
       console.log("// S M L checked");
+      this.state.trees.forEach((tree) => {
+        if (
+          tree.size === "Small Tree" ||
+          tree.size === "Medium Tree" ||
+          tree.size === "Large Tree"
+        ) {
+          displayList.push(
+            <Species
+              common={tree.common}
+              wpLink={tree.wpLink}
+              latin={tree.latin}
+              imagePath={tree.imagePath}
+            ></Species>
+          );
+        }
+      });
     } else if (
       this.checkArrayMatch(checkedArray, [false, false, false, true, false])
     ) {
       console.log("// + E checked");
+      this.state.trees.forEach((tree) => {
+        if (tree.Evergreen) {
+          displayList.push(
+            <Species
+              common={tree.common}
+              wpLink={tree.wpLink}
+              latin={tree.latin}
+              imagePath={tree.imagePath}
+            ></Species>
+          );
+        }
+      });
     } else if (
       this.checkArrayMatch(checkedArray, [true, false, false, true, false])
     ) {
       console.log("// S + E checked");
+      this.state.trees.forEach((tree) => {
+        if (tree.size === "Small Tree" && tree.Evergreen) {
+          displayList.push(
+            <Species
+              common={tree.common}
+              wpLink={tree.wpLink}
+              latin={tree.latin}
+              imagePath={tree.imagePath}
+            ></Species>
+          );
+        }
+      });
     } else if (
       this.checkArrayMatch(checkedArray, [false, true, false, true, false])
     ) {
       console.log("// M + E checked");
+      this.state.trees.forEach((tree) => {
+        if (tree.size === "Medium Tree" && tree.Evergreen) {
+          displayList.push(
+            <Species
+              common={tree.common}
+              wpLink={tree.wpLink}
+              latin={tree.latin}
+              imagePath={tree.imagePath}
+            ></Species>
+          );
+        }
+      });
     } else if (
       this.checkArrayMatch(checkedArray, [false, false, true, true, false])
     ) {
       console.log("// L + E checked");
+      this.state.trees.forEach((tree) => {
+        if (tree.size === "Large Tree" && tree.Evergreen) {
+          displayList.push(
+            <Species
+              common={tree.common}
+              wpLink={tree.wpLink}
+              latin={tree.latin}
+              imagePath={tree.imagePath}
+            ></Species>
+          );
+        }
+      });
     } else if (
       this.checkArrayMatch(checkedArray, [true, true, false, true, false])
     ) {
       console.log("// S M + E checked");
+      this.state.trees.forEach((tree) => {
+        if (
+          (tree.size === "Small Tree" || tree.size === "Medium Tree") &&
+          tree.Evergreen
+        ) {
+          displayList.push(
+            <Species
+              common={tree.common}
+              wpLink={tree.wpLink}
+              latin={tree.latin}
+              imagePath={tree.imagePath}
+            ></Species>
+          );
+        }
+      });
     } else if (
       this.checkArrayMatch(checkedArray, [false, true, true, true, false])
     ) {
       console.log("// M L + E checked");
+      this.state.trees.forEach((tree) => {
+        if (
+          (tree.size === "Medium Tree" || tree.size === "Large Tree") &&
+          tree.Evergreen
+        ) {
+          displayList.push(
+            <Species
+              common={tree.common}
+              wpLink={tree.wpLink}
+              latin={tree.latin}
+              imagePath={tree.imagePath}
+            ></Species>
+          );
+        }
+      });
     } else if (
       this.checkArrayMatch(checkedArray, [true, false, true, true, false])
     ) {
       console.log("// S L + E checked");
+      this.state.trees.forEach((tree) => {
+        if (
+          (tree.size === "Small Tree" || tree.size === "Large Tree") &&
+          tree.Evergreen
+        ) {
+          displayList.push(
+            <Species
+              common={tree.common}
+              wpLink={tree.wpLink}
+              latin={tree.latin}
+              imagePath={tree.imagePath}
+            ></Species>
+          );
+        }
+      });
     } else if (
       this.checkArrayMatch(checkedArray, [true, true, true, true, false])
     ) {
       console.log("// S M L + E checked");
+      this.state.trees.forEach((tree) => {
+        if (
+          (tree.size === "Small Tree" ||
+            tree.size === "Medium Tree" ||
+            tree.size === "Large Tree") &&
+          tree.Evergreen
+        ) {
+          displayList.push(
+            <Species
+              common={tree.common}
+              wpLink={tree.wpLink}
+              latin={tree.latin}
+              imagePath={tree.imagePath}
+            ></Species>
+          );
+        }
+      });
     } else if (
       this.checkArrayMatch(checkedArray, [false, false, false, false, true])
     ) {
       console.log("// + F checked");
+      this.state.trees.forEach((tree) => {
+        if (tree.Flowering) {
+          displayList.push(
+            <Species
+              common={tree.common}
+              wpLink={tree.wpLink}
+              latin={tree.latin}
+              imagePath={tree.imagePath}
+            ></Species>
+          );
+        }
+      });
     } else if (
       this.checkArrayMatch(checkedArray, [true, false, false, false, true])
     ) {
       console.log("// S + F checked");
+      this.state.trees.forEach((tree) => {
+        if (tree.size === "Small Tree" && tree.Flowering) {
+          displayList.push(
+            <Species
+              common={tree.common}
+              wpLink={tree.wpLink}
+              latin={tree.latin}
+              imagePath={tree.imagePath}
+            ></Species>
+          );
+        }
+      });
     } else if (
       this.checkArrayMatch(checkedArray, [false, true, false, false, true])
     ) {
       console.log("// M + F checked");
+      this.state.trees.forEach((tree) => {
+        if (tree.size === "Medium Tree" && tree.Flowering) {
+          displayList.push(
+            <Species
+              common={tree.common}
+              wpLink={tree.wpLink}
+              latin={tree.latin}
+              imagePath={tree.imagePath}
+            ></Species>
+          );
+        }
+      });
     } else if (
       this.checkArrayMatch(checkedArray, [false, false, true, false, true])
     ) {
       console.log("// L + F checked");
+      this.state.trees.forEach((tree) => {
+        if (tree.size === "Large Tree" && tree.Flowering) {
+          displayList.push(
+            <Species
+              common={tree.common}
+              wpLink={tree.wpLink}
+              latin={tree.latin}
+              imagePath={tree.imagePath}
+            ></Species>
+          );
+        }
+      });
     } else if (
       this.checkArrayMatch(checkedArray, [true, true, false, false, true])
     ) {
       console.log("// S M + F checked");
+      this.state.trees.forEach((tree) => {
+        if (
+          (tree.size === "Small Tree" || tree.size === "Medium Tree") &&
+          tree.Flowering
+        ) {
+          displayList.push(
+            <Species
+              common={tree.common}
+              wpLink={tree.wpLink}
+              latin={tree.latin}
+              imagePath={tree.imagePath}
+            ></Species>
+          );
+        }
+      });
     } else if (
       this.checkArrayMatch(checkedArray, [false, true, true, false, true])
     ) {
       console.log("// M L + F checked");
+      this.state.trees.forEach((tree) => {
+        if (
+          (tree.size === "Medium Tree" || tree.size === "Large Tree") &&
+          tree.Flowering
+        ) {
+          displayList.push(
+            <Species
+              common={tree.common}
+              wpLink={tree.wpLink}
+              latin={tree.latin}
+              imagePath={tree.imagePath}
+            ></Species>
+          );
+        }
+      });
     } else if (
       this.checkArrayMatch(checkedArray, [true, false, true, false, true])
     ) {
       console.log("// S L + F checked");
+      this.state.trees.forEach((tree) => {
+        if (
+          (tree.size === "Small Tree" || tree.size === "Large Tree") &&
+          tree.Flowering
+        ) {
+          displayList.push(
+            <Species
+              common={tree.common}
+              wpLink={tree.wpLink}
+              latin={tree.latin}
+              imagePath={tree.imagePath}
+            ></Species>
+          );
+        }
+      });
     } else if (
       this.checkArrayMatch(checkedArray, [true, true, true, false, true])
     ) {
       console.log("// S M L + F checked");
+      this.state.trees.forEach((tree) => {
+        if (
+          (tree.size === "Small Tree" ||
+            tree.size === "Medium Tree" ||
+            tree.size === "Large Tree") &&
+          tree.Flowering
+        ) {
+          displayList.push(
+            <Species
+              common={tree.common}
+              wpLink={tree.wpLink}
+              latin={tree.latin}
+              imagePath={tree.imagePath}
+            ></Species>
+          );
+        }
+      });
     } else if (
       this.checkArrayMatch(checkedArray, [false, false, false, true, true])
     ) {
       console.log("// + E F checked");
+      this.state.trees.forEach((tree) => {
+        if (tree.Evergreen && tree.Flowering) {
+          displayList.push(
+            <Species
+              common={tree.common}
+              wpLink={tree.wpLink}
+              latin={tree.latin}
+              imagePath={tree.imagePath}
+            ></Species>
+          );
+        }
+      });
     } else if (
       this.checkArrayMatch(checkedArray, [true, false, false, true, true])
     ) {
       console.log("// S + E F checked");
+      this.state.trees.forEach((tree) => {
+        if (tree.size === "Small Tree" && tree.Evergreen && tree.Flowering) {
+          displayList.push(
+            <Species
+              common={tree.common}
+              wpLink={tree.wpLink}
+              latin={tree.latin}
+              imagePath={tree.imagePath}
+            ></Species>
+          );
+        }
+      });
     } else if (
       this.checkArrayMatch(checkedArray, [false, true, false, true, true])
     ) {
       console.log("// M + E F checked");
+      this.state.trees.forEach((tree) => {
+        if (tree.size === "Medium Tree" && tree.Evergreen && tree.Flowering) {
+          displayList.push(
+            <Species
+              common={tree.common}
+              wpLink={tree.wpLink}
+              latin={tree.latin}
+              imagePath={tree.imagePath}
+            ></Species>
+          );
+        }
+      });
     } else if (
       this.checkArrayMatch(checkedArray, [false, false, true, true, true])
     ) {
       console.log("// L + E F checked");
+      this.state.trees.forEach((tree) => {
+        if (tree.size === "Large Tree" && tree.Evergreen && tree.Flowering) {
+          displayList.push(
+            <Species
+              common={tree.common}
+              wpLink={tree.wpLink}
+              latin={tree.latin}
+              imagePath={tree.imagePath}
+            ></Species>
+          );
+        }
+      });
     } else if (
       this.checkArrayMatch(checkedArray, [true, true, false, true, true])
     ) {
       console.log("// S M + E F checked");
+      this.state.trees.forEach((tree) => {
+        if (
+          (tree.size === "Small Tree" || tree.size === "Medium Tree") &&
+          tree.Evergreen &&
+          tree.Flowering
+        ) {
+          displayList.push(
+            <Species
+              common={tree.common}
+              wpLink={tree.wpLink}
+              latin={tree.latin}
+              imagePath={tree.imagePath}
+            ></Species>
+          );
+        }
+      });
     } else if (
       this.checkArrayMatch(checkedArray, [false, true, true, true, true])
     ) {
       console.log("// M L + E F checked");
+      this.state.trees.forEach((tree) => {
+        if (
+          (tree.size === "Medium Tree" || tree.size === "Large Tree") &&
+          tree.Evergreen &&
+          tree.Flowering
+        ) {
+          displayList.push(
+            <Species
+              common={tree.common}
+              wpLink={tree.wpLink}
+              latin={tree.latin}
+              imagePath={tree.imagePath}
+            ></Species>
+          );
+        }
+      });
     } else if (
       this.checkArrayMatch(checkedArray, [true, false, true, true, true])
     ) {
       console.log("// S L + E F checked");
+      this.state.trees.forEach((tree) => {
+        if (
+          (tree.size === "Small Tree" || tree.size === "Large Tree") &&
+          tree.Evergreen &&
+          tree.Flowering
+        ) {
+          displayList.push(
+            <Species
+              common={tree.common}
+              wpLink={tree.wpLink}
+              latin={tree.latin}
+              imagePath={tree.imagePath}
+            ></Species>
+          );
+        }
+      });
     } else if (
       this.checkArrayMatch(checkedArray, [true, true, true, true, true])
     ) {
       console.log("// S M L + E F checked");
-    } else console.log("popo");
+      this.state.trees.forEach((tree) => {
+        if (
+          (tree.size === "Small Tree" ||
+            tree.size === "Medium Tree" ||
+            tree.size === "Large Tree") &&
+          tree.Evergreen &&
+          tree.Flowering
+        ) {
+          displayList.push(
+            <Species
+              common={tree.common}
+              wpLink={tree.wpLink}
+              latin={tree.latin}
+              imagePath={tree.imagePath}
+            ></Species>
+          );
+        }
+      });
+    }
 
     this.setState({ display: displayList });
   }
