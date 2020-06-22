@@ -1,11 +1,20 @@
 import React from "react";
 import splashVideo from "../assets/WebHeroClip.mp4";
 
-import "./Splash.css"
+import "./Splash.css";
+import splashMobileBackground from "../assets/splash-mobile__background.jpg";
 
 function Splash() {
   return (
     <div className="Splash">
+      <div className="Splash__mobile" style={{backgroundImage: `url(${splashMobileBackground})`}}>
+        <div className="Splash__title-box">
+          <p className="Splash__title dcsn">
+            DC STATE NURSERY <i>at</i>
+          </p>
+          <p className="Splash__title ctFarm">CASEY TREE FARM</p>
+        </div>
+      </div>
       <div className="Splash__overlay">
         <div className="Splash__title-box">
           <p className="Splash__title dcsn">

@@ -2,6 +2,9 @@
   width: 100%;
   font-family: cronos-pro, zeitung-mono, lato, sans-serif;
 }
+.Splash__mobile {
+  display: none;
+}
 
 .Splash__overlay {
   /* display: flex; */
@@ -43,9 +46,20 @@
 }
 
 @media only screen and (max-width: 600px) {
+  .Splash__mobile {
+    display: flex;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  .Splash__overlay {
+    display: none;
+  }
+  .Splash__Video-box {
+    display: none;
+  }
   .Splash__title {
-    font-size: 20px;
-    color: rgba(0, 0, 0, 0.8);
+    font-size: 22px;
+    color: rgba(40, 16, 15, 1);
     margin: 0;
   }
 }
