@@ -7,11 +7,40 @@
   font-family: zeitung-mono, cronos-pro, lato, sans-serif;
   font-weight: 100;
 }
-
+.Request__iframe-mobile {
+  display: none;
+}
 .Request__iframe {
   background: rgb(224, 225, 225);
 }
 
 .Request__formTitle {
   padding: 2vh 0;
+}
+
+@media only screen and (max-width: 600px) {
+  .Request__iframe-container {
+    width: 100%;
+  }
+  .Request__formTitle {
+    display: none;
+  }
+  .Request__iframe {
+    display: none;
+  }
+
+  .Request__formButton-mobile {
+    text-decoration: none;
+    border-radius: 10px;
+    background: #3768b2;
+    text-align: center;
+    margin: 10vh 0;
+  }
+  .Request__formButton-text-mobile {
+    font-family: zeitung-mono, cronos-pro, lato, sans-serif;
+    font-size: 22px;
+    font-weight: 100;
+    margin: 4vw;
+    color: rgb(255, 255, 255);
+  }
 }

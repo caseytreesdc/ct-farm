@@ -19,6 +19,10 @@
   padding: 40px 40px;
   margin: 40px;
   background: rgba(255, 255, 255, 0.3);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .Splash__title {
@@ -49,7 +53,9 @@
   .Splash__mobile {
     display: flex;
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
+    background-position: center;
+    min-height: 40vh;
   }
   .Splash__overlay {
     display: none;

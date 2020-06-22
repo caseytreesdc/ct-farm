@@ -49,4 +49,8 @@
   .Species__card {
     width: 80vw;
   }
+
+  .Species__sketch {
+    width: 25vw;
+  }
 }
