@@ -23,7 +23,7 @@ function About() {
         care we provide to our soils by feeding the microflora using
         organic-based inputs, all our trees are grown in-ground using rootbags,
         which encourages greater fine root production than traditional balled
-        and burlapped trees (photos needed). More fine roots mean better water
+        and burlapped trees. More fine roots mean better water
         and nutrient exchange and better chances of survival post-planting.
         Rootbag-grown trees also use less soil than their balled and burlapped
         counterparts, reducing environmental impacts and transportation costs,
