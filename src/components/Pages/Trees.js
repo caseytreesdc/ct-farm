@@ -666,7 +666,7 @@ class Trees extends React.Component {
           <p className="Page__p">
             We encourage you to schedule a visit to see our trees up close. We
             would be pleased to give you a tour of our nursery and the farm, and
-            explain in greater detailour susainable growing practices.
+            explain in greater detail our susainable growing practices.
           </p>
           <p className="Page__p">
             Please note that all listed measurements for mature height and
