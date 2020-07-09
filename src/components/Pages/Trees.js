@@ -1,5 +1,5 @@
 import React from "react";
-import json from "../../assets/speciesList5.json";
+import json from "../../assets/speciesList6.json";
 
 import Species from "../Species";
 import Logos from "../Logos";
