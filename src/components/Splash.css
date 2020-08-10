@@ -41,12 +41,13 @@
 }
 
 .Splash__Video-box {
-  max-height: 67vh;
+  max-height: 100vh;
   overflow: hidden;
 }
 
 .Splash__Video {
   width: 100%;
+  object-fit: fill;
 }
 
 @media only screen and (max-width: 600px) {
