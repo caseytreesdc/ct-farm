@@ -20,7 +20,7 @@ class Nav extends React.Component {
           return (
             <>
               <div className="Nav__anchor-box">
-                <a className="Nav__anchor" href={item.path}>
+                <a target="__blank" className="Nav__anchor" href={item.path}>
                   <p className="Nav__anchor-text">{item.text}</p>
                 </a>
               </div>
@@ -30,7 +30,7 @@ class Nav extends React.Component {
         } else {
           return (
             <div className="Nav__anchor-box">
-              <a className="Nav__anchor" href={item.path}>
+              <a target="__blank" className="Nav__anchor" href={item.path}>
                 <p className="Nav__anchor-text">{item.text}</p>
               </a>
             </div>

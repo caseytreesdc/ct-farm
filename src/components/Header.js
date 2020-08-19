@@ -29,7 +29,7 @@ const Header = () => {
             { text: "GET INVOLVED", path: "https://caseytrees.org/take-action/water/" },
             { text: "LEARN", path: "https://caseytreesdc.github.io/ct-videos/" },
             { text: "PLANT", path: "https://caseytrees.org/plant/" },
-            { text: "GIVE", path: "https://caseytrees.org/waystogive/evergreen-membership-donation-form/" },
+            { text: "GIVE", path: "https://connect.clickandpledge.com/w/Form/212c9142-dfbb-4801-8e11-d0f1b5810fc0" },
           ]}
         ></Nav>
       </div>
