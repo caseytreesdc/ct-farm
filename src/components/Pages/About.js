@@ -34,7 +34,7 @@ function About() {
         className="Page__hero"
         alt="cute flower buds signifying that this section is growing!"
       ></img>
-      <p className="Page__contact">CONTACT | 202.257.3666</p>
+      <p className="Page__contact">CONTACT | 202.257.7067</p>
       <Logos></Logos>
     </div>
   );
