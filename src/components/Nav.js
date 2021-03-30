@@ -72,7 +72,6 @@ class Nav extends React.Component {
             document.getElementsByClassName("Nav")[1].scrollIntoView();
           }}
           className="Nav grey Nav__internal"
-          id="FarmTrees"
         >
           {this.state.navBar}
         </div>

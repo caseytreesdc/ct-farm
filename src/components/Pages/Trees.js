@@ -674,7 +674,7 @@ class Trees extends React.Component {
           </p>
         </div>
         <div className="Trees">
-          <div className="Trees__header">
+          <div className="Trees__header" id="FarmTrees">
             <h1 className="Page__title">TREES WE GROW</h1>
             <Logos></Logos>
           </div>
