@@ -13,7 +13,7 @@ function Request() {
           height="1700"
           width="100%"
           frameborder="0"
-          scrolling="no"
+          scrolling="yes"
           allowFullScreen
         ></iframe>
       </div>
@@ -26,7 +26,7 @@ function Request() {
           height="2300"
           width="100%"
           frameborder="0"
-          scrolling="no"
+          scrolling="yes"
           allowFullScreen
         ></iframe>
       </div>
